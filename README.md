@@ -19,7 +19,7 @@ Training kit includes
       <li>Session 2: <strong>Introduction to Node Package Manager</strong>.</li>
       <li>Session 3: <strong>Console, OS & Path related utility functions</strong>.</li>
       <li>Session 4: <strong>Query-String, String-Decoder, Global & Modules related utility functions</strong>.</li>
-      <li>Assignments</li>
+      <li><strong>Assignments Level 1</strong></li>
     </ul>
   </li>
   <li><strong>Intermediate Level</strong>
@@ -27,7 +27,7 @@ Training kit includes
       <li>Session 5: <strong>Debugging, File System & Timers related utility functions</strong>.</li>
       <li>Session 6: <strong>Child Process, Readline & Process related utility functions</strong>.</li>
       <li>Session 7: <strong>HTTP & Events related utility functions</strong>.</li>
-      <li>Assignments</li>
+      <li><strong>Assignments Level 2</strong></li>
     </ul>
   </li>
   <li><strong>Advanced Level</strong>
@@ -35,7 +35,7 @@ Training kit includes
       <li>Session 8: <strong>HTTPS & Stream related utility functions</strong>.</li>
       <li>Session 9: <strong>Assertion Testing related utility functions</strong>.</li>
       <li>Session 10: <strong>Node Theory & Architecture</strong>.</li>
-      <li>Assignments</li>
+      <li><strong>Assignments Level 3</strong></li>
     </ul>
     <ul>
       <li>Session 11: <strong>NPM Case Studies: Express & Node-MySQL</strong>.</li>
