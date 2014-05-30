@@ -13,32 +13,42 @@ Prerequisites arranged as per the priority
 Training kit includes
 =====================
 <ul>
-  <li><strong>Basic Level</strong>
+  <li><strong>Basic Level 1</strong>
     <ul>
       <li>Session 1: <strong>Introduction to NodeJS</strong>.</li>
       <li>Session 2: <strong>Introduction to Node Package Manager</strong>.</li>
       <li>Session 3: <strong>Console, OS & Path related utility functions</strong>.</li>
       <li>Session 4: <strong>Query-String, String-Decoder, Global & Modules related utility functions</strong>.</li>
-      <li><strong>Assignments Level 1</strong></li>
+      <li><strong>Assignments BL-1</strong></li>
     </ul>
   </li>
-  <li><strong>Intermediate Level</strong>
+  <li><strong>Basic Level 2</strong>
     <ul>
       <li>Session 5: <strong>Debugging, File System & Timers related utility functions</strong>.</li>
       <li>Session 6: <strong>Child Process, Readline & Process related utility functions</strong>.</li>
       <li>Session 7: <strong>HTTP & Events related utility functions</strong>.</li>
-      <li><strong>Assignments Level 2</strong></li>
+      <li><strong>Assignments BL-2</strong></li>
     </ul>
   </li>
-  <li><strong>Advanced Level</strong>
+  <li><strong>Advanced Level 1</strong>
     <ul>
       <li>Session 8: <strong>HTTPS & Stream related utility functions</strong>.</li>
       <li>Session 9: <strong>Assertion Testing related utility functions</strong>.</li>
       <li>Session 10: <strong>Node Theory & Architecture</strong>.</li>
-      <li><strong>Assignments Level 3</strong></li>
+      <li><strong>Assignments AL-1</strong></li>
+    </ul>
+  </li>
+  <li><strong>Advanced Level 2</strong>
+    <ul>
+      <li>Session 11: <strong>DNS, Domain & Net related utility functions</strong>.</li>
+      <li>Session 12: <strong>Cluster</strong>.</li>
+      <li>Session 13: <strong>C/C++ Addons</strong>.</li>
+      <li>Session 14: <strong>Crypto related utility functions</strong>.</li>
+      <li>Session 15: <strong>Node Theory, Security & Architecture</strong>.</li>
+      <li><strong>Assignments AL-2</strong></li>
     </ul>
     <ul>
-      <li>Session 11: <strong>NPM Case Studies: Express & Node-MySQL</strong>.</li>
+      <li>Session 16: <strong>NPM Case Studies: Express & Node-MySQL</strong>.</li>
     </ul>
   </li>
 </ul>
