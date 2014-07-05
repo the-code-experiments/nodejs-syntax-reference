@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Introduction to Nodejs</title>
+
+		<meta name="description" content="An introduction to Nodejs">
+		<meta name="author" content="Ashwin Hegde">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<!-- Slide 1 -->
+				<section>
+					<h1>Introduction to Nodejs</h1>
+					<p>
+						<small>Created by <a href="github.com/hegdeashwin">Ashwin Hegde</a></small>
+					</p>
+				</section>
+
+				<!-- Slide 2 -->
+				<section>
+					<h2>Agenda</h2>
+					<p>What is Nodejs & NPM ?</p>
+					<p>History</p>
+					<p>Design</p>
+					<p>Architecture</p>
+					<p>Uses</p>
+					<p>Development</p>
+					<p>Advantages and Drawbacks</p>
+					<p>Companies using Nodejs</p>
+				</section>
+
+				<!-- Slide 3 -->
+				<section>
+					<section>
+						<h2>What is Nodejs ?</h2>
+						<p>
+							A platform built on <span style="color:yellow;">Chrome's JavaScript runtime</span> for easily building fast, scalable network applications. Node.js uses an <span style="color:yellow;">event-driven</span>, <span style="color:yellow;">non-blocking I/O model</span> that makes it lightweight and efficient, perfect for <span style="color:yellow;">data-intensive real-time</span> applications that run across distributed devices.
+						</p>
+					</section>
+					<section>
+						<p>Node.js is written is C/C++ & JavaScript. and Nodejs applications are written in <span style="color:yellow;">JavaScript</span>. These applications run <span style="color:yellow;">single-threaded</span>, although Node.js uses multiple threads for file and network events. </p>
+					</section>
+					<section>
+						<p>Node.js contains a built-in <span style="color:yellow;">asynchronous I/O</span> library for file, <span style="color:yellow;">socket</span> and <span style="color:yellow;">HTTP</span> communication. The HTTP and socket support allows Node.js to <span style="color:yellow;">act as a web server without additional web server</span> software such as Apache.</p>
+					</section>
+				</section>
+
+				<!-- Slide 4 -->
+				<section>
+					<section>
+						<h2>History</h2>
+						<p>
+							Nodejs was created by <span style="color:yellow;">Ryan Dahl</span> starting in 2009. Its development and maintenance is sponsored by <span style="color:yellow;">Joyent</span>.
+						</p>
+					</section>
+
+					<section>
+						<p>
+							Nodejs builds on this further by providing the <span style="color:yellow;">event loop</span> as a language instead of a library. Unlike the traditional models, which use <span style="color:yellow;">blocking calls</span>, Node.js does not have event-loop calls. Instead, Node.js enters the loop after executing the script, based on how JavaScript works.
+						</p>
+					</section>
+
+
+					<section>
+						<p>Google's <span style="color:yellow;">V8 engine</span> was released.</p>
+						<p>Nodejs was first published by Dahl in 2009 and could only run on Linux. It reached international attention after Dahl presented at the inaugural JSConf EU.</p>
+						<p>In June 2011, Microsoft partnered with Joyent to help create a native Windows version of Node.js</p>
+					</section>
+
+
+				</section>
+
+				<!-- Slide 5 -->
+				<section>
+					<h2>Design</h2>
+					<p>
+						
+					</p>
+				</section>
+
+				<!-- Slide 6 -->
+				<section>
+					<h2>Architecture</h2>
+					<p>
+						
+					</p>
+				</section>
+
+				<!-- Slide 7 -->
+				<section>
+					<h2>Uses</h2>
+					<p>
+
+					</p>
+				</section>
+
+				<!-- Slide 8 -->
+				<section>
+					<h2>Development</h2>
+					<p>
+
+					</p>
+				</section>
+
+				<!-- Slide 9 -->
+				<section>
+					<h2>Advantages and Drawbacks</h2>
+					<p>
+
+					</p>
+				</section>
+
+				<!-- Slide 10 -->
+				<section>
+					<h2>Companies using Nodejs</h2>
+					<p>
+
+					</p>
+				</section>
+
+				<section>
+					<h1>THE END</h1>
+					<h4>Hosted on: <a href="github.com/hegdeashwin/Server-Side-Node.js" target="_blank">github.com/hegdeashwin/Server-Side-Node.js</a></h4>
+					<h4>Follow me at: <a href="github.com/hegdeashwin" target="_blank">github.com/hegdeashwin</a></h4>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
