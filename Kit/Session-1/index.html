@@ -38,308 +38,380 @@
 
 		<div class="reveal">
 			<div class="slides">
-			    <section data-id="e5d5666c6471e4c96edbf555accf3f68" class>
-			        <h1 align="center">
-			            Introduction to <font color="#4A86E8">Node.js</font>
-			        </h1>
-			        <p>
-			            Created by: Ashwin Hegde<br>
-			        </p>
-			    </section>
-			    <section data-id="153906fa12617e0e9c572b5397b993e3" class>
-			        <h2 align="left">
-			            Agenda
-			        </h2>
-			        <div align="left">
-			            <ul>
-			                <li>
-			                    <p>
-			                        &nbsp;What is Node.js &amp; NPM ?
-			                    </p>
-			                </li>
-			                <li>
-			                    <p>
-			                        &nbsp;History
-			                    </p>
-			                </li>
-			                <li>
-			                    <p>
-			                        &nbsp;Design
-			                    </p>
-			                </li>
-			                <li>
-			                    <p>
-			                        &nbsp;Architecture
-			                    </p>
-			                </li>
-			                <li>&nbsp;Uses
-			                </li>
-			                <li>
-			                    <p>
-			                        &nbsp;Development
-			                    </p>
-			                </li>
-			                <li>
-			                    <p>
-			                        &nbsp;Advantages and Drawbacks
-			                    </p>
-			                </li>
-			                <li>
-			                    <p>
-			                        &nbsp;Companies using Node.js
-			                    </p>
-			                </li>
-			            </ul>
-			        </div>
-			    </section>
-			    <section data-id="89c6d3c2d948e2c9ed64d3265cedddc6" class="stack">
-			        <section data-id="eab4eb16f7e32815167c4ee8a9668252" class>
-			            <h2 align="left">
-			                What is Node.js ?
-			            </h2>
-			            <div align="left">
-			                <ul>
-			                    <li>&nbsp;A platform built on <span style="color: yellow;">Chrome's JavaScript runtime.</span>
-			                    </li>
-			                </ul>
-			            </div>
-			            <div align="left">
-			                <ul>
-			                    <li>&nbsp;Uses an <font color="#FFFF00">event-drive</font>, <font color="#FFFF00">non-blocking I/O</font> model.
-			                    </li>
-			                    <li>&nbsp;Written in C/C++ &amp; JavaScript. And its applications are written in JavaScript.
-			                    </li>
-			                    <li>&nbsp;Applications are run as <font color="#FFFF00">single-threaded</font>.
-			                    </li>
-			                    <li>&nbsp;Build-in <span style="color: yellow;">asynchronous I/O<font color="#FFFFFF">,</font> file-system<font color="#D9D9D9">,</font> socket <font color="#FFFFFF">and</font> HTTP<font color="#FFFFFF">.</font></span>
-			                    </li>
-			                    <li>
-			                        <span style="color: yellow;">&nbsp;<font color="#FFFFFF">Acts as a <font color="#FFFF00">web server</font>.</font></span>
-			                    </li>
-			                    <li>
-			                        <span style="color: yellow;"><font color="#FFFFFF">&nbsp;</font></span> It provides the <span style="color: yellow;">event loop</span> as a language instead of a library.
-			                    </li>
-			                </ul>
-			            </div>
-			        </section>
-			        <section data-id="eebb988096bbb892fb126372a5410dd8" class>
-			            <h2 align="left">
-			                What is NPM ?
-			            </h2>
-			            <div align="left">
-			                <ul>
-			                    <li>&nbsp;<br>
-			                    </li>
-			                </ul>
-			            </div>
-			        </section>
-			    </section>
-			    <section data-id="001dea42abb59887cfd1b6c3343b2034" class>
-			        <h2 align="left">
-			            History
-			        </h2>
-			        <div align="left">
-			            <ul>
-			                <li>&nbsp;Created by <span style="color: yellow;">Ryan Dahl <font color="#FFFFFF">and was first&nbsp;</font></span> <span style="color: yellow;"><font color="#FFFFFF">published in 2009, could only run on Linux.</font></span>
-			                </li>
-			                <li>
-			                    <span style="color: yellow;"><font color="#FFFFFF">&nbsp;Ryan was</font></span> inspired by seeing a file upload progress bar on <font color="#FFFF00">Flickr.</font><br>
-			                </li>
-			                <li>
-			                    <span style="color: yellow;"><font color="#FFFFFF">&nbsp;</font></span> Sponsored by <span style="color: yellow;">Joyent</span>.
-			                </li>
-			                <li>&nbsp;Originally Ryan had several failed projects in <a href="http://en.wikipedia.org/wiki/C_%28programming_language%29" title="C (programming language)">C</a> and <a href="http://en.wikipedia.org/wiki/Haskell_%28programming_language%29" title="Haskell (programming language)">Haskell</a>, but when Google's <a href="http://en.wikipedia.org/wiki/V8_%28JavaScript_engine%29" title="V8 (JavaScript engine)">V8 engine</a> was released, it was success.<br>
-			                </li>
-			                <li>&nbsp;In June 2011, Microsoft partnered with Joyent to help create a native Windows version of Node.js
-			                </li>
-			                <li>&nbsp;NPM, a package manager for Node.js libraries, was introduced in 2011.
-			                </li>
-			            </ul>
-			        </div>
-			    </section>
-			    <section data-id="5f22eb5c85a12209c4d051da3a0a8a99" class="stack">
-			        <section data-id="0b7158197c68c20adc6d5d5d0469fcfe" class>
-			            <h2 align="left">
-			                <span class="mw-headline" id="Design">Design</span>
-			            </h2>
-			            <div align="left">
-			                <ul>
-			                    <li>&nbsp;The goal was <font color="#FFFF00">push capabilities <a href="http://en.wikipedia.org/wiki/Push_technology" title="Push technology"></a></font> such as those seen in Gmail.&nbsp;
-			                    </li>
-			                    <li>&nbsp;Ryan chose JavaScript because of the lack of an existing I/O API. This allowed him to define a convention of <a href="http://en.wikipedia.org/wiki/Non-blocking_I/O" title="Non-blocking I/O" class="mw-redirect">non-blocking</a>, event-driven I/O.
-			                    </li>
-			                    <li>&nbsp;Node.js is part of the Server Side JavaScript environment and extends the JavaScript API to offer server side features.
-			                    </li>
-			                    <li>&nbsp;It uses an <font color="#FFFF00">event loop</font>, instead of processes or threads.
-			                    </li>
-			                </ul>
-			            </div>
-			        </section>
-			        <section data-id="dbd14e2a7a28e9feb24e2b08ec55af7b" class>
-			            <h2>
-			                <br>
-			            </h2><img style="width: 824.974px; height: 463.819px; max-height: none; max-width: none;" src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/505692/event-loop.png">
-			        </section>
-			        <section data-id="44224e70e3863a7835c4ac01c332662a" class>
-			            <h2>
-			                Similar environments
-			            </h2>
-			            <div align="left">
-			                <ul>
-			                    <li>
-			                        <a href="http://en.wikipedia.org/wiki/Tornado_%28web_server%29" title="Tornado (web server)">Tornado</a> and <a href="http://en.wikipedia.org/wiki/Twisted_%28software%29" title="Twisted (software)">Twisted</a> for Python.<br>
-			                    </li>
-			                </ul>
-			            </div>
-			            <div align="left">
-			                <ul>
-			                    <li>
-			                        <a href="http://en.wikipedia.org/wiki/Perl_Object_Environment" title="Perl Object Environment">Perl Object Environment</a> for <font color="#FFFFFF"><a href="http://en.wikipedia.org/wiki/Perl" title="Perl">Perl</a></font> .<br>
-			                    </li>
-			                </ul>
-			            </div>
-			            <div align="left">
-			                <ul>
-			                    <li>
-			                        <a href="http://en.wikipedia.org/wiki/Vert.x" title="Vert.x">Vert.x</a> for Java.<br>
-			                    </li>
-			                </ul>
-			            </div>
-			            <div align="left">
-			                <ul>
-			                    <li>
-			                        <a href="http://en.wikipedia.org/wiki/EventMachine" title="EventMachine">EventMachine</a> for <font color="#FFFFFF"><a href="http://en.wikipedia.org/wiki/Ruby_%28programming_language%29" title="Ruby (programming language)">Ruby</a></font> .
-			                    </li>
-			                </ul>
-			                <p>
-			                    <br>
-			                </p>
-			            </div>
-			            <p>
-			                Unlike most JavaScript programs, Node.js is not executed in a web browser, but instead as a <a href="http://en.wikipedia.org/wiki/Server-side_JavaScript" title="Server-side JavaScript" class="mw-redirect">server-side JavaScript</a> application.
-			            </p>
-			        </section>
-			    </section>
-			    <section data-id="0e1bdf64a282747fd01a643a635c632c" class>
-			        <h2 align="left">
-			            <span class="mw-headline" id="Architecture">Architecture</span>
-			        </h2>
-			        <div align="center">
-			            <img style="width: 408.984px; height: 524.621px; max-height: none; max-width: none;" src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/505721/event-arch.png">
-			        </div>
-			    </section>
-			    <section data-id="4bf2eb0745288f51d33575d557d7dc1d" class="stack">
-			        <section data-id="7140fbb127d653106c12a7b08618acae" class>
-			            <h2 align="left">
-			                <span class="mw-headline" id="Advantages_and_drawbacks">Advantages</span>
-			            </h2>
-			            <div align="justify">
-			                <ul>
-			                    <li>Node.js allows the reuse of the same model and service interface between client-side and server-side.
-			                    </li>
-			                    <li>The fact that JavaScript had no unified API for IO allowed the developers of Node to think about the best way to implement a modern IO interface.
-			                    </li>
-			                    <li>Implement all IO in an asynchronous and non-blocking way, combined with a single-threaded event-based loop, presented a novel way to implement real-time web applications.
-			                    </li>
-			                </ul>
-			            </div>
-			        </section>
-			        <section data-id="cd117e2cf8f03e1ecfeb9b7e6016055b" class>
-			            <h2 align="left">
-			                <span class="mw-headline" id="Advantages_and_drawbacks2"><br></span>
-			            </h2>
-			            <ul>
-			                <li>Node.js can therefore keep many connections alive transparently without having to reject new incoming connections.
-			                </li>
-			                <li>Node.js is a lightweight platform, a step away from the heavier frameworks and infrastructures.
-			                </li>
-			            </ul>
-			        </section>
-			    </section>
-			    <section data-id="ee6c57a9c3a615d0659d78397ff5fd8d" class="stack">
-			        <section data-id="72b092a8e8ee22d592de5089e08a5972" class>
-			            <h2 align="left">
-			                Drawbacks
-			            </h2>
-			            <div align="left">
-			                <ul>
-			                    <li>Node.js libraries are developed actively, with a high rate of change from month-to-month. This can cause version issues, instabilities and certain development issues.
-			                    </li>
-			                </ul>
-			                <p>
-			                    <br>
-			                </p>
-			                <ul>
-			                    <li>Npm shrink wrap and package.json were introduced a while back to set up standards, but the issue of standards is still a work in process and some issues still exist.
-			                    </li>
-			                </ul>
-			            </div>
-			        </section>
-			        <section data-id="aa6464f755d8ede23aa950eedafed341" class>
-			            <ul>
-			                <li>The whole callback, event-driven, functional programming aspects of Node.js can add a learning curve burden to server-side programmers of other object-oriented languages.
-			                </li>
-			                <li>Asynchronous and event-driven code inherently adds more complexity to the code versus a synchronous code.
-			                </li>
-			                <li>As a JavaScript derivative, Node.js code is loosely-typed with Object-orientation abilities. This combination can result in code that is hard to debug.
-			                </li>
-			                <li>JavaScript has more than its share of "bad parts" that might throw off engineers and newcomers.
-			                </li>
-			            </ul>
-			        </section>
-			    </section>
-			    <section data-id="0da3700dae323420bf98f1067ff3f43c" class>
-			        <h2 align="left">
-			            Companies using Node.js
-			        </h2>
-			        <div align="left">
-			            <ul>
-			                <li>&nbsp;Linkedin<br>
-			                </li>
-			            </ul>
-			        </div>
-			        <div align="left">
-			            <ul>
-			                <li>&nbsp;Paypal
-			                </li>
-			                <li>&nbsp;SAP
-			                </li>
-			                <li>&nbsp;Microsoft
-			                </li>
-			                <li>&nbsp;Yahoo
-			                </li>
-			                <li>&nbsp;Walmart
-			                </li>
-			                <li>&nbsp;Groupon
-			                </li>
-			                <li>&nbsp;eBay
-			                </li>
-			                <li>&nbsp;http://nodejs.org/industry/<br>
-			                </li>
-			            </ul>
-			        </div>
-			    </section>
-			    <section data-id="a648afe26118f1c242e1815789d7640d" class>
-			        <h2>
-			            &nbsp;
-			        </h2>
-			        <p>
-			            <br>
-			        </p>
-			        <p>
-			            Thank You<br>
-			        </p>
-			        <p>
-			            <br>
-			        </p>
-			        <p>
-			            <a href="github.com/hegdeashwin">github.com/hegdeashwin</a>
-			        </p>
-			        <p>
-			            <a href="github.com/hegdeashwin/Server-Side-Node.js">github.com/hegdeashwin/Server-Side-Node.js</a><br>
-			        </p>
-			    </section>
+			<section data-id="e5d5666c6471e4c96edbf555accf3f68" class="">
+				<h2>
+					<span>
+						<br>
+					</span>
+				</h2>
+		<h1>
+				<span>Introduction to&nbsp;</span>
+			</h1>
+		<p>
+			<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/508424/node-logo.png">
+			<br>
+		</p>
+		<p>
+		<span style="font-size: 36.039127349853516px; font-style: normal; font-variant: normal;">Created by: Ashwin Hegde</span>
+		<br>
+		</p>
+		</section>
+		<section data-id="153906fa12617e0e9c572b5397b993e3" class="">
+			<h2 align="left" style="text-align: center; ">Agenda</h2>
+		<div align="left">
+			<ul>
+		<li>
+			<p>What is Node.js &amp; NPM ?</p>
+		</li>
+		<li>
+		<p>History.</p>
+		</li>
+		<li>
+		<p>Design &amp; similar environments.</p>
+		</li>
+		<li>
+		<p>Architecture.</p>
+		</li>
+		<li>
+		<p>
+		<span>Benefits.</span>
+		</p>
+		</li>
+		<li>
+		<p>
+		<span>Drawbacks.</span>
+		</p>
+		</li>
+		<li>
+							<p>Companies using Node.js &amp; Node.js hosting.</p>
+		</li>
+		<li>
+		<p>Case studies - Nebula and Grunt.</p>
+		</li>
+		</ul>
+		</div>
+		</section>
+		<section data-id="89c6d3c2d948e2c9ed64d3265cedddc6" class="stack">
+			<section data-id="eab4eb16f7e32815167c4ee8a9668252" class="">
+				<h2 align="left" style="text-align: center; ">What is Node.js ?</h2>
+		<div align="left">
+				<ul>
+					<li>A platform built on <span style="color: yellow;">Chrome's JavaScript runtime</span>
+					<font color="#ffffff">.</font>
+		</li>
+				</ul>
 			</div>
+		<div align="left">
+			<ul>
+		<li>Uses an <font color="#ffff00">event-driven</font>, <font color="#ffff00">non-blocking I/O</font> model.</li>
+		<li>Written in C/C++ &amp; JavaScript &amp; its apps are written in JavaScript.</li>
+		<li>Applications are run as <font color="#ffff00">single-threaded</font>.</li>
+		<li>Build-in <span style="color: yellow;">asynchronous I/O<font color="#ffffff">, </font>file-system<font color="#d9d9d9">, </font>socket</span>
+			<font color="#ffffff">
+				<span>,&nbsp;</span>
+			</font>
+			<font color="#ffff00">HTTP </font>
+			<font color="#ffffff">&amp;</font>
+			<font color="#ffff00"> cluster</font>
+			<font color="#ffffff">.</font>
+		</li>
+		<li>
+			<span style="color: yellow;">
+				<font color="#ffffff">Acts as a <font color="#ffff00">web server</font>.</font>
+			</span>
+		</li>
+		<li>It provides the <span style="color: yellow;">event loop</span> as a language instead of a library.</li>
+		</ul>
+		</div>
+		</section>
+		<section data-id="eebb988096bbb892fb126372a5410dd8" class="">
+			<h2 align="left" style="text-align: center; ">What is NPM ?</h2>
+		<div align="left">
+			<ul>
+				<li>
+		</li>
+				<li>NPM is the official <font color="#ffff00">package manager </font>for Node.js.</li>
+				<li>Runs through the command line and manages dependencies.</li>
+				<li>Allows users to install Node.js applications.<br>
+				</li>
+				<li>NPM is written entirely in JavaScript, and runs on the Node.js platform.<br>
+				</li>
+				<li>
+					<br>
+				</li>
+		</ul>
+			</div>
+		</section>
+		</section>
+		<section data-id="001dea42abb59887cfd1b6c3343b2034" class="">
+			<h2 align="left" style="text-align: center; ">History</h2>
+		<div align="left">
+			<ul>
+		<li>Created by <span style="color: yellow;">Ryan Dahl<font color="#ffffff"> and was first&nbsp;</font>
+		</span>
+		<span style="color: yellow;">
+			<font color="#ffffff">published in 2009, could only run on Linux.</font>
+		</span>
+		</li>
+		<li>
+		<span style="color: yellow;">
+		<font color="#ffffff">Ryan was </font>
+		</span>inspired by seeing a file upload progress bar on<font color="#ffff00"> Flickr.</font>
+		<br>
+		</li>
+		<li>Sponsored by <span style="color: yellow;">Joyent</span>.</li>
+		<li>Originally Ryan had several failed projects in <a href="http://en.wikipedia.org/wiki/C_%28programming_language%29" title="C (programming language)">C</a> and <a href="http://en.wikipedia.org/wiki/Haskell_%28programming_language%29" title="Haskell (programming language)">Haskell</a>, but when Google's <a href="http://en.wikipedia.org/wiki/V8_%28JavaScript_engine%29" title="V8 (JavaScript engine)">V8 engine</a> was released, it was success.<br>
+		</li>
+		<li>In June 2011, Microsoft partnered with Joyent to help create a native Windows version of Node.js</li>
+		<li>NPM, a package manager for Node.js libraries, was introduced in 2011.</li>
+		</ul>
+		</div>
+		</section>
+		<section data-id="5f22eb5c85a12209c4d051da3a0a8a99" class="stack">
+			<section data-id="0b7158197c68c20adc6d5d5d0469fcfe" class="">
+				<h2 align="left" style="text-align: center; ">
+					<span class="mw-headline" id="Design">Design</span>
+				</h2>
+		<div>
+				<span class="mw-headline">
+					<br>
+				</span>
+			</div>
+		<div align="left">
+			<ul>
+		<li>
+		<span>The goal was </span>
+			<font color="#ffff00" style="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit;">push capabilities<a href="http://en.wikipedia.org/wiki/Push_technology" title="Push technology">
+			</a>
+		</font>
+		<span> such as those seen in Gmail.&nbsp;</span>
+		<br>
+		</li>
+		<li>Ryan chose 
+		JavaScript because of the lack of an existing I/O API. This allowed him 
+		to define a convention of <a href="http://en.wikipedia.org/wiki/Non-blocking_I/O" title="Non-blocking I/O" class="mw-redirect">non-blocking</a>, event-driven I/O.</li>
+		<li>Node.js is part of the Server Side JavaScript environment and extends the JavaScript API to offer server side features.</li>
+		<li>It uses an <font color="#ffff00">event loop</font>, instead of processes or threads.</li>
+		</ul>
+		</div>
+		</section>
+		<section data-id="dbd14e2a7a28e9feb24e2b08ec55af7b" class="">
+			<h2>Under the hood</h2>
+		<div>
+			<br>
+		</div>
+		<div>
+		<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/508552/under-the-hood.png">
+		</div>
+		<div>
+		<span style="text-align: left;">Runs JavaScript on the server.</span>
+		<br>
+		</div>
+		</section>
+		<section class="" data-id="ae7e65cf1db2e70789f973aa89a30f6e">
+			<h2 style="font-style: normal; font-variant: normal;">EVENT LOOP WORKING</h2>
+		<div>
+		<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/508545/event-loop.png">
+			<br>
+		</div>
+		</section>
+		<section data-id="44224e70e3863a7835c4ac01c332662a" class="">
+			<h2>Similar environments</h2>
+		<div>
+			<br>
+		</div>
+		<div align="left">
+		<ul>
+			<li>
+		<a href="http://en.wikipedia.org/wiki/Tornado_%28web_server%29" title="Tornado (web server)">Tornado</a> and <a href="http://en.wikipedia.org/wiki/Twisted_%28software%29" title="Twisted (software)">Twisted</a> for Python.<br>
+		</li>
+		</ul>
+		</div>
+		<div align="left">
+		<ul>
+			<li>
+		<a href="http://en.wikipedia.org/wiki/Perl_Object_Environment" title="Perl Object Environment">Perl Object Environment</a> for <font color="#ffffff">
+			<a href="http://en.wikipedia.org/wiki/Perl" title="Perl">Perl</a>
+		</font>.<br>
+		</li>
+		</ul>
+		</div>
+		<div align="left">
+		<ul>
+			<li>
+		<a href="http://en.wikipedia.org/wiki/Vert.x" title="Vert.x">Vert.x</a> for Java.<br>
+		</li>
+		</ul>
+		</div>
+		<div align="left">
+		<ul>
+		<li>
+		<a href="http://en.wikipedia.org/wiki/EventMachine" title="EventMachine">EventMachine</a> for <font color="#ffffff">
+		<a href="http://en.wikipedia.org/wiki/Ruby_%28programming_language%29" title="Ruby (programming language)">Ruby</a>
+		</font>.</li>
+		</ul>
+		<p>
+		<br>
+		</p>
+		</div>
+		<p> Unlike most JavaScript programs, Node.js is not executed in a web browser, but instead as a <a href="http://en.wikipedia.org/wiki/Server-side_JavaScript" title="Server-side JavaScript" class="mw-redirect">server-side JavaScript</a> application.</p>
+		</section>
+		</section>
+		<section class="stack" data-id="44cd19d968a1b3ffeb20a6c0d50f42e9">
+			<section data-id="0e1bdf64a282747fd01a643a635c632c" class="">
+				<h2 align="left" style="text-align: center; ">
+					<span class="mw-headline" id="Architecture">Architecture</span>
+				</h2>
+		<div align="center">
+		<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/508556/multiThreadedServer.png">
+				<br>
+		</div>
+			</section>
+			<section class="" data-id="bff39214fb90de2b091845b08ed6eb1a">
+				<h2>
+		<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/508557/NodeJS-EventedIOAsyncIO.png">
+				<br>
+		</h2>
+			</section>
+		</section>
+		<section class="stack" data-id="3b6f7f52ec0401d47059487779f953a2">
+			<section data-id="7140fbb127d653106c12a7b08618acae" class="">
+				<h2 align="left" style="text-align: center; ">
+					<span class="mw-headline" id="Advantages_and_drawbacks">benefits</span>
+				</h2>
+		<div align="justify">
+				<ul>
+		<li>Savings in I/O cost (i.e., high performance)<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/509149/apache-vs-nginx.png" style="text-align: center; width: 689.5047193231479px; height: 472.0351543199506px; max-height: none; max-width: none;">
+			</li>
+		</ul>
+		</div>
+		</section>
+		<section class="" data-id="93ecada380630c8dce14e1cd3abb9934">
+			<div style="text-align: left;">
+				<ul>
+					<li style="text-align: left;">
+						<span style="text-align: center;">Savings in Memory.</span>
+						<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/509155/apache-vs-nginx-memory.png" style="width: 773.5419256423826px; height: 531.7155028209979px; max-height: none; max-width: none;">
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="" data-id="7da5620df9f563294d39f1d9abaf1cfe">
+			<div style="text-align: left;">
+				<ul>
+					<li>End-2-End JavaScript/Coffee-Script.</li>
+					<li>Thousands of libraries. Search at <a href="http://npmjs.org">npmjs.org</a>
+					<br>
+				</li>
+				<li>Second most popular watched project on Github.</li>
+				<li>Build CLI based tools such as Grunt or Make.</li>
+				<li>Build high-performance, high I/O, TCP apps like proxy servers, PaaS, databases, etc.</li>
+				<li>Build a (soft) real-time social app like Twitter or a chat app.</li>
+				<li>
+					<span>Add a RESTful API-based web server in front of an application server.</span>
+					<br>
+				</li>
+			</ul>
+		</div>
+		</section>
+		</section>
+		<section data-id="72b092a8e8ee22d592de5089e08a5972" class="">
+			<h2 align="left" style="text-align: center; ">Drawbacks</h2>
+			<div style="text-align: left; ">
+				<ul>
+					<li>Libraries are still in developed.</li>
+					<li>Many libraries, such as the SAML auth library which is required for enterprise apps, are in development available yet.<br>
+					</li>
+					<li>
+						<span>Learning curve burden to server-side programmers.</span>
+						<br>
+					</li>
+					<li>Asynchronous and event-driven code inherently adds more complexity to the code versus a synchronous code.</li>
+				</ul>
+			</div>
+			<div align="left">
+		</div>
+		</section>
+		<section class="stack" data-id="9b3b0f6b1bb6a951e57e5b1ab218e986">
+			<section data-id="0da3700dae323420bf98f1067ff3f43c" class="">
+				<h2 align="left" style="text-align: center; ">Companies using Node.js</h2>
+		<div>
+				<br>
+			</div>
+		<div align="left">
+			<ul>
+		<li>Amazon, Google,&nbsp;<span>Microsoft,&nbsp;</span>
+			<span>Yahoo,&nbsp;</span>
+			<span>Linkedin,&nbsp;</span>
+			<span>Paypal, SAP, Walmart, StrongLoop, e-Bay etc.&nbsp;</span>
+		</li>
+		<li>For more information visit <a href="http://nodejs.org/industry/">http://nodejs.org/industry/</a>
+		</li>
+		</ul>
+		</div>
+		</section>
+		<section class="" data-id="379c85a5066e842a5d3c7b884a9054b2">
+			<h2>Node.js Hosting</h2>
+		<div>
+			<br>
+		</div>
+		<div style="text-align: left; ">
+		<ul>
+		<li>
+		<span>Managed providers provide a "Node Appliance" solution. Node and NPM will already be set up for you, and deploys are typically done via git push or similar method.&nbsp;</span>
+		<br>
+		</li>
+		</ul>
+		<div>
+		<br>
+		</div>
+		<div>
+		<ul>
+		<li>Joyent, Amazon EC, Redhat OpenShift, Heroku, Nodejitsu,&nbsp;<span style="font-size: 36.039127349853516px; font-style: normal; font-variant: normal;">Windows Azure,&nbsp;</span>
+		<span style="font-size: 36.039127349853516px; font-style: normal; font-variant: normal;">Baidu App&nbsp;Engine,&nbsp;</span>Cloudnode, Cloud Foundry, appfog etc.<br>
+		</li>
+		<li>For more information visit <a href="github.com/joyent/node/wiki/node-hosting">github.com/joyent/node/wiki/node-hosting</a>
+		</li>
+		</ul>
+		</div>
+		</div>
+		</section>
+		</section>
+		<section class="" data-id="bae3aeb7ae289c5606e0c24155da809a">
+			<h2>Case studies</h2>
+			<div>
+				<br>
+			</div>
+			<div style="text-align: left; ">
+				<ol>
+					<li>
+						<span>Cybage UI - IMS [ Backbone Stack + Nodejs Stack with MySQL Enterprise, ORM, Nodemailer ].</span>
+						<br>
+					</li>
+					<li>
+						<a href="https://slides.com/ashwinhegde/deck/github.com/hegdeashwin/Nebula">github.com/hegdeashwin/Nebula</a>&nbsp;[ Backbone Stack + Nodejs Stack ].</li>
+					</ol>
+				</div>
+			</section>
+			<section data-id="a648afe26118f1c242e1815789d7640d" class="">
+				<h2>&nbsp;</h2>
+		<p>
+				<br>
+			</p>
+		<p>Thank You<br>
+		</p>
+		<p>
+		<br>
+		</p>
+		<p>
+		<a href="github.com/hegdeashwin">github.com/hegdeashwin</a>
+		</p>
+		<p>
+		<a href="github.com/hegdeashwin/Server-Side-Node.js">github.com/hegdeashwin/Server-Side-Node.js</a>
+		<br>
+		</p>
+		</section>
+		</div>
 
 		</div>
 
