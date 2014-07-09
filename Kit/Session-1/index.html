@@ -16,7 +16,7 @@
 		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
 
 		<script type="text/javascript">
-	if( window.location.search.match( /print-pdf/gi ) ) {
+if( window.location.search.match( /print-pdf/gi ) ) {
 				var link = document.createElement( 'link' );
 				link.rel = 'stylesheet';
 				link.type = 'text/css';
@@ -210,6 +210,35 @@ var ws = require('websocket.io'), <br>server = ws.listen(3000);<br><br>server.on
 							Event Loop<img style="width: 833.39px; height: 524.337px; max-height: none; max-width: none;" src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/509490/image.axd.png">
 						</h2>
 					</section>
+					<section class data-id="f6daf997756325d23cbff6fa3b60f479">
+						<h2>
+							<br>
+						</h2>
+						<div>
+							<div style="text-align: left;">
+								This is different from other models in at least 3 ways:
+							</div>
+							<div>
+								<br>
+							</div>
+							<div>
+								<ol>
+									<li>
+										<span style="text-align: center;">&nbsp; &nbsp; Your code is <font color="#FFFF00">aysnc</font> by default.</span><br>
+									</li>
+									<li>
+										<span style="text-align: center;">&nbsp; &nbsp; There is <font color="#FFFF00">no context switching</font> as the Event Loop simply publishes and subscribes to the thread pool.</span><br>
+									</li>
+									<li>
+										<span style="text-align: center;">&nbsp; &nbsp; The Event Loop <font color="#FFFF00">never blocks</font>.</span><br>
+									</li>
+								</ol>
+							</div>
+						</div>
+						<div>
+							<br>
+						</div>
+					</section>
 					<section data-id="44224e70e3863a7835c4ac01c332662a" class>
 						<h2>
 							Similar environments
@@ -253,20 +282,15 @@ var ws = require('websocket.io'), <br>server = ws.listen(3000);<br><br>server.on
 						</p>
 					</section>
 				</section>
-				<section class="stack" data-id="44cd19d968a1b3ffeb20a6c0d50f42e9">
-					<section data-id="0e1bdf64a282747fd01a643a635c632c" class>
-						<h2 style="text-align: center;" align="left">
-							<span class="mw-headline" id="Architecture">Architecture</span>
+				<section data-id="0e1bdf64a282747fd01a643a635c632c" class>
+					<h2 style="text-align: center;" align="left">
+						<span class="mw-headline" id="Architecture">Architecture</span>
+					</h2>
+					<div align="center">
+						<h2 style="font-style: normal; font-variant: normal;">
+							<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/508557/NodeJS-EventedIOAsyncIO.png">
 						</h2>
-						<div align="center">
-							<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/508556/multiThreadedServer.png"><br>
-						</div>
-					</section>
-					<section class data-id="bff39214fb90de2b091845b08ed6eb1a">
-						<h2>
-							<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/508557/NodeJS-EventedIOAsyncIO.png"><br>
-						</h2>
-					</section>
+					</div>
 				</section>
 				<section class="stack" data-id="3b6f7f52ec0401d47059487779f953a2">
 					<section data-id="7140fbb127d653106c12a7b08618acae" class>
@@ -317,14 +341,14 @@ var ws = require('websocket.io'), <br>server = ws.listen(3000);<br><br>server.on
 					</h2>
 					<div style="text-align: left;">
 						<ul>
-							<li>Libraries are still in developed.
+							<li>Libraries are still <font color="#FFFF00">in developed</font>.
 							</li>
 							<li>Many libraries, such as the SAML auth library which is required for enterprise apps, are in development available yet.<br>
 							</li>
 							<li>
-								<span>Learning curve burden to server-side programmers.</span><br>
+								<font color="#FFFF00">Learning curve burden</font> to server-side programmers.<br>
 							</li>
-							<li>Asynchronous and event-driven code inherently adds more complexity to the code versus a synchronous code.
+							<li>Asynchronous and event-driven code inherently adds more <font color="#FFFF00">complexity</font> to the code versus a synchronous code.
 							</li>
 						</ul>
 					</div>
