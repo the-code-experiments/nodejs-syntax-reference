@@ -24,8 +24,8 @@ Training kit includes
   </li>
   <li><strong>Basic Level 2</strong>
     <ul>
-      <li>Session 5: <strong>Debugging, File System & Timers related utility functions</strong>.</li>
-      <li>Session 6: <strong>Child Process, Readline & Process related utility functions</strong>.</li>
+      <li>Session 5: <strong>Debugging, File System & Readline related utility functions</strong>.</li>
+      <li>Session 6: <strong>Process, Child Process & Timers related utility functions</strong>.</li>
       <li>Session 7: <strong>HTTP & Events related utility functions</strong>.</li>
       <li><strong>Assignments BL-2</strong></li>
     </ul>
