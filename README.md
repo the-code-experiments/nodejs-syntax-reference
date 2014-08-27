@@ -15,40 +15,39 @@ Training kit includes
 <ul>
   <li><strong>Basic Level 1</strong>
     <ul>
-      <li>Session 1: <strong>Introduction to NodeJS</strong>.</li>
-      <li>Session 2: <strong>Introduction to Node Package Manager</strong>.</li>
-      <li>Session 3: <strong>Console, OS & Path related utility functions</strong>.</li>
-      <li>Session 4: <strong>Query-String, String-Decoder, Global & Modules related utility functions</strong>.</li>
+      <li>Session 1: <strong>Introduction to NodeJS & NPM</strong>. <a href="http://slides.com/ashwinhegde/introduction-to-node-js/live#/" target="_blank">Visit Online Presentation</a></li>
+      <li>Session 2: <strong>Console, OS & Path related utility functions</strong>.</li>
+      <li>Session 3: <strong>Query-String, String-Decoder, Global & Modules related utility functions</strong>.</li>
       <li><strong>Assignments BL-1</strong></li>
     </ul>
   </li>
   <li><strong>Basic Level 2</strong>
     <ul>
-      <li>Session 5: <strong>Debugging, File System & Readline related utility functions</strong>.</li>
-      <li>Session 6: <strong>Process, Child Process & Timers related utility functions</strong>.</li>
-      <li>Session 7: <strong>HTTP & Events related utility functions</strong>.</li>
+      <li>Session 4: <strong>Debugging, File System & Readline related utility functions</strong>.</li>
+      <li>Session 5: <strong>Process, Child Process & Timers related utility functions</strong>.</li>
+      <li>Session 6: <strong>HTTP & Events related utility functions</strong>.</li>
       <li><strong>Assignments BL-2</strong></li>
     </ul>
   </li>
   <li><strong>Advanced Level 1</strong>
     <ul>
-      <li>Session 8: <strong>HTTPS & Stream related utility functions</strong>.</li>
-      <li>Session 9: <strong>Assertion Testing related utility functions</strong>.</li>
-      <li>Session 10: <strong>Node Theory & Architecture</strong>.</li>
+      <li>Session 7: <strong>HTTPS & Stream related utility functions</strong>.</li>
+      <li>Session 8: <strong>Assertion Testing related utility functions</strong>.</li>
+      <li>Session 9: <strong>Node Theory & Architecture</strong>.</li>
       <li><strong>Assignments AL-1</strong></li>
     </ul>
   </li>
   <li><strong>Advanced Level 2</strong>
     <ul>
-      <li>Session 11: <strong>DNS, Domain & Net related utility functions</strong>.</li>
-      <li>Session 12: <strong>Cluster</strong>.</li>
-      <li>Session 13: <strong>C/C++ Addons</strong>.</li>
-      <li>Session 14: <strong>Crypto related utility functions</strong>.</li>
-      <li>Session 15: <strong>Node Theory, Security & Architecture</strong>.</li>
+      <li>Session 10: <strong>DNS, Domain & Net related utility functions</strong>.</li>
+      <li>Session 11: <strong>Cluster</strong>.</li>
+      <li>Session 12: <strong>C/C++ Addons</strong>.</li>
+      <li>Session 13: <strong>Crypto related utility functions</strong>.</li>
+      <li>Session 14: <strong>Node Theory, Security & Architecture</strong>.</li>
       <li><strong>Assignments AL-2</strong></li>
     </ul>
     <ul>
-      <li>Session 16: <strong>NPM Case Studies: Express & Node-MySQL</strong>.</li>
+      <li>Session 15: <strong>NPM Case Studies: Express & Node-MySQL</strong>.</li>
     </ul>
   </li>
 </ul>
