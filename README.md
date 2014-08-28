@@ -72,6 +72,7 @@ Online Environment:
 
 Offline Environment:
 <ul>
+  <li>WebStorm</li>
   <li>Sublime Text 2 or above</li>
   <li>Bracket</li>
   <li>Notepad++</li>
