@@ -1,5 +1,5 @@
-Learning Server-Side with Node.js
-=================================
+Learning Server-Side JavaScript with Node.js
+============================================
 This training kit has been developed for those who already have the basic knowledge of JavaScript; This training kit will teach you the basics of NodeJS and NPM (Node Package Manager).
 
 Prerequisites arranged as per the priority 
