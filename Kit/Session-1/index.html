@@ -35,347 +35,467 @@
 	</head>
 
 	<body>
-
 		<div class="reveal">
-
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
-
-				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							<tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							<tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							<tr>
-						</tbody>
-					</table>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
-
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
-
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
-				</section>
-
+			    <section data-id="e5d5666c6471e4c96edbf555accf3f68" class="">
+			        <h2>Introduction to</h2>
+			        <h2>
+			            <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/1200496/Screenshot_from_2015-03-24_21_24_52.png" style="font-size: 135.72px; width: 718.3259531527867px; height: 395.7575671660657px; max-height: none; max-width: none;"/>
+			            <br/>
+			        </h2>
+			        <p>
+			            <span style="font-size: 24px; font-style: normal; font-variant: normal;">Created /P</span>
+			            <span style="font-size: 24px;">resented </span>
+			            <span style="font-size: 24px;">by:</span>
+			            <font color="#ffff00" style="font-size: 24px; font-family: inherit; font-style: inherit; font-variant: inherit;"> Ashwin Hegde</font>
+			            <br/>
+			        </p>
+			    </section>
+			    <section data-id="153906fa12617e0e9c572b5397b993e3" class="">
+			        <h2 style="text-align: center;" align="left">Agenda</h2>
+			        <div align="left">
+			            <ul>
+			                <li>
+			                    <span style="text-align: center;">Introduction to Node.js ?</span>
+			                    <br/>
+			                    <p></p>
+			                </li>
+			            </ul>
+			            <ul>
+			                <li>
+			                    <span style="text-align: center;">History.</span>
+			                    <br/>
+			                </li>
+			                <li>
+			                    <p>Design &amp; similar environments.</p>
+			                </li>
+			                <li>
+			                    <p>Architecture.</p>
+			                </li>
+			                <li>
+			                    <p>
+			                        <span>Benefits.</span>
+			                    </p>
+			                </li>
+			                <li>
+			                    <p>
+			                        <span>Drawbacks.</span>
+			                    </p>
+			                </li>
+			                <li>
+			                    <p>Companies using Node.js &amp; Node.js hosting.</p>
+			                </li>
+			                <li>
+			                    <p>Case studies - Nebula and Grunt.</p>
+			                </li>
+			            </ul>
+			        </div>
+			    </section>
+			    <section data-id="89c6d3c2d948e2c9ed64d3265cedddc6" class="stack">
+			        <section data-id="eab4eb16f7e32815167c4ee8a9668252" class="">
+			            <h2 style="text-align: center;" align="left">What is Node.js ?</h2>
+			            <div align="left">
+			                <ul>
+			                    <li>An 
+			                        <font color="#ffff00">open source</font>&nbsp;
+			                        <font color="#ffff00">cross-platform</font> built on 
+			                        <span style="color: yellow;">Chrome's JavaScript runtime</span>
+			                        <font color="#ffffff">
+			                            <span>&nbsp;environment.</span>
+			                        </font>
+			                    </li>
+			                </ul>
+			                <font color="#ffffff">
+			                    <span>
+			                        <br/>
+			                    </span>
+			                    <span>
+			                        <br/>
+			                    </span>
+			                </font>
+			            </div>
+			            <div align="left">
+			                <ul>
+			                    <li>Uses an 
+			                        <font color="#ffff00">event-driven</font>, 
+			                        <font color="#ffff00">non-blocking I/O</font> model.
+			                    </li>
+			                </ul>
+			                <div align="left">
+			                    <br/>
+			                </div>
+			                <ul>
+			                    <li>Written in C/C++ &amp; JavaScript &amp; its apps are written in JavaScript.</li>
+			                </ul>
+			                <div align="left">
+			                    <br/>
+			                </div>
+			                <ul>
+			                    <li>Used commonly for 
+			                        <font color="#ffff00">real-time</font> web apps.
+			                    </li>
+			                </ul>
+			            </div>
+			        </section>
+			        <section class="" data-id="5159be07172c193d5affe1fbad801992">
+			            <h2>
+			                <br/>
+			            </h2>
+			            <div>
+			                <li style="text-align: left; font-size: 35.87535858154297px; font-style: normal; font-variant: normal;">Applications are run as&nbsp;
+			                    <font color="#ffff00">single-threaded</font>.
+			                </li>
+			                <br/>
+			                <li style="text-align: left; font-size: 35.87535858154297px; font-style: normal; font-variant: normal;">Build-in&nbsp;
+			                    <span style="color: yellow;">asynchronous I/O
+			                        <font color="#ffffff">,&nbsp;</font>file-system
+			                        <font color="#d9d9d9">, &nbsp;</font>socket
+			                    </span>
+			                    <font color="#ffffff">, &nbsp;</font>
+			                    <font color="#ffff00">HTTP&nbsp;</font>
+			                    <font color="#ffffff">&amp;</font>
+			                    <font color="#ffff00">&nbsp;cluster</font>
+			                    <font color="#ffffff">.</font>
+			                </li>
+			                <font color="#ffffff">
+			                    <span>
+			                        <br/>
+			                    </span>
+			                </font>
+			                <li style="text-align: left; font-size: 35.87535858154297px; font-style: normal; font-variant: normal;">
+			                    <span style="color: yellow;">
+			                        <font color="#ffffff">Acts as a&nbsp;
+			                            <font color="#ffff00">web server</font>.
+			                        </font>
+			                    </span>
+			                </li>
+			                <font color="#ffffff">
+			                    <span>
+			                        <br/>
+			                    </span>
+			                </font>
+			                <li style="text-align: left; font-size: 35.87535858154297px; font-style: normal; font-variant: normal;">
+			                    <span>The ability to write JavaScript on the server.</span>
+			                    <br/>
+			                </li>
+			            </div>
+			        </section>
+			    </section>
+			    <section data-id="001dea42abb59887cfd1b6c3343b2034" class="">
+			        <h2 style="text-align: center;" align="left">History</h2>
+			        <div align="left">
+			            <ul>
+			                <li>
+			                    <font style="font-size: 24px;">Created by </font>
+			                    <span style="color: yellow;">Ryan Dahl
+			                        <font color="#ffffff">
+			                            <font style="font-size: 24px;">and first&nbsp;</font>
+			                        </font>
+			                    </span>
+			                    <span style="color: yellow;">
+			                        <font color="#ffffff">
+			                            <font style="font-size: 24px;">published in </font>2009, could only run on Linux.
+			                        </font>
+			                    </span>
+			                </li>
+			                <li>
+			                    <span>
+			                        <font style="font-size: 24px;">Sponsored by </font>
+			                    </span>
+			                    <span style="color: yellow;">Joyent</span>
+			                    <span>.</span>
+			                    <br/>
+			                </li>
+			                <li>
+			                    <font style="font-size: 24px;">June </font>2011, 
+			                    <font color="#ffff00">Microsoft partnered with Joyent</font>
+			                    <font style="font-size: 24px;">to help create a native </font>Windows 
+			                    <font style="font-size: 24px;">version of Node.js.</font>
+			                </li>
+			                <li>
+			                    <font style="font-size: 24px;">Janunary </font>2012, 
+			                    <font color="#ffff00">Dahl stepped aside</font>, 
+			                    <font style="font-size: 24px;">npm creator</font>
+			                    <font color="#ffff00">Isaac Schlueter</font>
+			                    <font style="font-size: 24px;">manage the project.</font>
+			                </li>
+			                <li>
+			                    <font style="font-size: 24px;">January </font>2014, 
+			                    <font color="#ffff00">Timothy J. Fontaine</font>
+			                    <font style="font-size: 24px;">became new project lead.</font>
+			                </li>
+			                <li>
+			                    <font style="font-size: 24px;">December</font> 2014, 
+			                    <font color="#ffff00">Fedor Indutny </font>started 
+			                    <font color="#ffff00">IO.js</font>
+			                </li>
+			            </ul>
+			        </div>
+			    </section>
+			    <section data-id="5f22eb5c85a12209c4d051da3a0a8a99" class="stack">
+			        <section data-id="dbd14e2a7a28e9feb24e2b08ec55af7b" class="">
+			            <h2>Under the hood</h2>
+			            <div>
+			                <br/>
+			            </div>
+			            <div>
+			                <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/508552/under-the-hood.png"/>
+			            </div>
+			            <div>
+			                <span style="text-align: left;">Runs JavaScript on the server.</span>
+			                <br/>
+			            </div>
+			        </section>
+			        <section class="" data-id="ae7e65cf1db2e70789f973aa89a30f6e">
+			            <h2 style="font-style: normal; font-variant: normal;">code block</h2>
+			            <br/>
+			            <pre>var ws = require('websocket.io'), 
+			                <br/>server = ws.listen(3000);
+			                <br/>
+			                <br/>server.on('connection', function (socket) {
+			                <br/>
+			                <br/>    console.log('connected to client');
+			                <br/>    socket.send('You connected to a web socket!');
+			                <br/>
+			                <br/>    socket.on('message', function (data) { 
+			                <br/>	console.log('message received:', data);
+			                <br/>    });
+			                <br/>
+			                <br/>    socket.on('close', function () { 
+			                <br/>		console.log('socket closed!');
+			                <br/>    });
+			                <br/>});
+			                <br/>
+			            </pre>
+			            <br/>
+			        </section>
+			        <section data-id="f5ef99aadb37bd4e8f18b3df3c0d1b8a" class="">
+			            <h2>Event Loop
+			                <img style="width: 833.39px; height: 524.337px; max-height: none; max-width: none;" src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/509490/image.axd.png"/>
+			            </h2>
+			        </section>
+			        <section data-id="44224e70e3863a7835c4ac01c332662a" class="">
+			            <h2>Similar environments</h2>
+			            <div>
+			                <br/>
+			            </div>
+			            <div align="left">
+			                <ul>
+			                    <li>
+			                        <a href="http://en.wikipedia.org/wiki/Tornado_%28web_server%29" title="Tornado (web server)">Tornado</a> and 
+			                        <a href="http://en.wikipedia.org/wiki/Twisted_%28software%29" title="Twisted (software)">Twisted</a> for Python.
+			                        <br/>
+			                    </li>
+			                </ul>
+			            </div>
+			            <div align="left">
+			                <ul>
+			                    <li>
+			                        <a href="http://en.wikipedia.org/wiki/Perl_Object_Environment" title="Perl Object Environment">Perl Object Environment</a> for 
+			                        <font color="#ffffff">
+			                            <a href="http://en.wikipedia.org/wiki/Perl" title="Perl">Perl</a>
+			                        </font>.
+			                        <br/>
+			                    </li>
+			                </ul>
+			            </div>
+			            <div align="left">
+			                <ul>
+			                    <li>
+			                        <a href="http://en.wikipedia.org/wiki/Vert.x" title="Vert.x">Vert.x</a> for Java.
+			                        <br/>
+			                    </li>
+			                </ul>
+			            </div>
+			            <div align="left">
+			                <ul>
+			                    <li>
+			                        <a href="http://en.wikipedia.org/wiki/EventMachine" title="EventMachine">EventMachine</a> for 
+			                        <font color="#ffffff">
+			                            <a href="http://en.wikipedia.org/wiki/Ruby_%28programming_language%29" title="Ruby (programming language)">Ruby</a>
+			                        </font>.
+			                    </li>
+			                </ul>
+			                <p>
+			                    <br/>
+			                </p>
+			            </div>
+			            <p> Unlike most JavaScript programs, Node.js is not executed in a web browser, but instead as a 
+			                <a href="http://en.wikipedia.org/wiki/Server-side_JavaScript" title="Server-side JavaScript" class="mw-redirect">server-side JavaScript</a> application.
+			            </p>
+			        </section>
+			    </section>
+			    <section data-id="0e1bdf64a282747fd01a643a635c632c" class="">
+			        <h2 style="text-align: center;" align="left">
+			            <span class="mw-headline" id="Architecture">Architecture</span>
+			        </h2>
+			        <div align="center">
+			            <h2 style="font-style: normal; font-variant: normal;">
+			                <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/508557/NodeJS-EventedIOAsyncIO.png"/>
+			            </h2>
+			        </div>
+			    </section>
+			    <section class="stack" data-id="3b6f7f52ec0401d47059487779f953a2">
+			        <section data-id="7140fbb127d653106c12a7b08618acae" class="">
+			            <h2 style="text-align: center;" align="left">
+			                <span class="mw-headline" id="Advantages_and_drawbacks">benefits</span>
+			            </h2>
+			            <div align="justify">
+			                <ul>
+			                    <li>Savings in I/O cost (i.e., high performance)
+			                        <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/509149/apache-vs-nginx.png" style="text-align: center; width: 689.505px; height: 472.035px; max-height: none; max-width: none;"/>
+			                    </li>
+			                </ul>
+			            </div>
+			        </section>
+			        <section class="" data-id="93ecada380630c8dce14e1cd3abb9934">
+			            <div style="text-align: left;">
+			                <ul>
+			                    <li style="text-align: left;">
+			                        <span style="text-align: center;">Savings in Memory.</span>
+			                        <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/509155/apache-vs-nginx-memory.png" style="width: 773.542px; height: 531.716px; max-height: none; max-width: none;"/>
+			                    </li>
+			                </ul>
+			            </div>
+			        </section>
+			        <section class="" data-id="7da5620df9f563294d39f1d9abaf1cfe">
+			            <div style="text-align: left;">
+			                <ul>
+			                    <li>End-2-End JavaScript/Coffee-Script.</li>
+			                    <li>Thousands of libraries. Search at 
+			                        <a href="http://npmjs.org">npmjs.org</a>
+			                        <br/>
+			                    </li>
+			                    <li>Second most popular watched project on Github.</li>
+			                    <li>Build CLI based tools such as Grunt or Make.</li>
+			                    <li>Build high-performance, high I/O, TCP apps like proxy servers, PaaS, databases, etc.</li>
+			                    <li>Build a (soft) real-time social app like Twitter or a chat app.</li>
+			                    <li>
+			                        <span>Add a RESTful API-based web server in front of an application server.</span>
+			                        <br/>
+			                    </li>
+			                </ul>
+			            </div>
+			        </section>
+			    </section>
+			    <section data-id="72b092a8e8ee22d592de5089e08a5972" class="">
+			        <h2 style="text-align: center;" align="left">Drawbacks</h2>
+			        <div style="text-align: left;">
+			            <ul>
+			                <li>Libraries are still 
+			                    <font color="#ffff00">in developed</font>.
+			                </li>
+			                <li>Many libraries, such as the SAML auth library which is required for enterprise apps, are in development available yet.
+			                    <br/>
+			                </li>
+			                <li>
+			                    <font color="#ffff00">Learning curve burden</font> to server-side programmers.
+			                    <br/>
+			                </li>
+			                <li>Asynchronous and event-driven code inherently adds more 
+			                    <font color="#ffff00">complexity </font>to the code versus a synchronous code.
+			                </li>
+			            </ul>
+			        </div>
+			        <div align="left"></div>
+			    </section>
+			    <section class="stack" data-id="9b3b0f6b1bb6a951e57e5b1ab218e986">
+			        <section data-id="0da3700dae323420bf98f1067ff3f43c" class="">
+			            <h2 style="text-align: center;" align="left">Companies using Node.js</h2>
+			            <div>
+			                <br/>
+			            </div>
+			            <div align="left">
+			                <ul>
+			                    <li>Amazon, Google,&nbsp;
+			                        <span>Microsoft,&nbsp;</span>
+			                        <span>Yahoo,&nbsp;</span>
+			                        <span>Linkedin,&nbsp;</span>
+			                        <span>Paypal, SAP, Walmart, StrongLoop, e-Bay etc.&nbsp;</span>
+			                    </li>
+			                    <li>For more information visit 
+			                        <a href="http://nodejs.org/industry/">http://nodejs.org/industry/</a>
+			                    </li>
+			                </ul>
+			            </div>
+			        </section>
+			        <section class="" data-id="379c85a5066e842a5d3c7b884a9054b2">
+			            <h2>Node.js Hosting</h2>
+			            <div>
+			                <br/>
+			            </div>
+			            <div style="text-align: left;">
+			                <ul>
+			                    <li>
+			                        <span>Managed providers provide a "Node Appliance" solution. Node and NPM will already be set up for you, and deploys are typically done via git push or similar method.&nbsp;</span>
+			                        <br/>
+			                    </li>
+			                </ul>
+			                <div>
+			                    <br/>
+			                </div>
+			                <div>
+			                    <ul>
+			                        <li>Joyent, Amazon EC, Redhat OpenShift, Heroku, Nodejitsu,&nbsp;
+			                            <span style="font-size: 36.039127349853516px; font-style: normal; font-variant: normal;">Windows Azure,&nbsp;</span>
+			                            <span style="font-size: 36.039127349853516px; font-style: normal; font-variant: normal;">Baidu App&nbsp;Engine,&nbsp;</span>Cloudnode, Cloud Foundry, appfog etc.
+			                            <br/>
+			                        </li>
+			                        <li>For more information visit 
+			                            <a href="github.com/joyent/node/wiki/node-hosting">github.com/joyent/node/wiki/node-hosting</a>
+			                        </li>
+			                    </ul>
+			                </div>
+			            </div>
+			        </section>
+			    </section>
+			    <section class="" data-id="bae3aeb7ae289c5606e0c24155da809a">
+			        <h2>Case studies</h2>
+			        <div>
+			            <br/>
+			        </div>
+			        <div style="text-align: left;">
+			            <ol>
+			                <li>
+			                    <span>Cybage UI - IMS [ Backbone Stack + Nodejs Stack with MySQL Enterprise, ORM, Nodemailer ].</span>
+			                    <br/>
+			                </li>
+			                <li>
+			                    <a href="https://slides.com/ashwinhegde/deck/github.com/hegdeashwin/Nebula">
+			                        <font color="#ffffff">github.com/hegdeashwin/</font>Nebula
+			                    </a>&nbsp;
+			                    <font style="font-size: 24px;">[Backbone.js + Express]</font>.
+			                </li>
+			                <li>
+			                    <font color="#ffffff">github.com/hegdeahwin/</font>
+			                    <font color="#6d9eeb">Boneloop</font>
+			                    <font style="font-size: 24px;">[Backbone.js + Loopback]</font>.
+			                </li>
+			                <li>github.com/hegdeashwin/
+			                    <font color="#e69138">Nodemyadmin</font>
+			                    <font style="font-size: 24px;">[Angular.js + Loopback]</font>.
+			                </li>
+			                <li>github.com/hegdeashwin/
+			                    <font color="#b6d7a8">Nodecart</font>
+			                    <font style="font-size: 24px;">[Ember.js + Hapi].</font>
+			                </li>
+			            </ol>
+			        </div>
+			    </section>
+			    <section data-id="a648afe26118f1c242e1815789d7640d" class="">
+			        <h2>&nbsp;
+			            <span>Thank You</span>
+			        </h2>
+			        <p>
+			            <br/>Follow me at
+			        </p>
+			        <p>
+			            <a href="github.com/hegdeashwin">github.com/hegdeashwin</a>
+			        </p>
+			    </section>
 			</div>
-
 		</div>
-
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 
