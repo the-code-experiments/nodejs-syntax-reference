@@ -38,458 +38,494 @@
 		<div class="reveal">
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-			    <section data-id="e5d5666c6471e4c96edbf555accf3f68" class="">
-			        <h2>Introduction to</h2>
-			        <h2>
-			            <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/1200496/Screenshot_from_2015-03-24_21_24_52.png" style="font-size: 135.72px; width: 718.3259531527867px; height: 395.7575671660657px; max-height: none; max-width: none;"/>
-			            <br/>
-			        </h2>
-			        <p>
-			            <span style="font-size: 24px; font-style: normal; font-variant: normal;">Created /P</span>
-			            <span style="font-size: 24px;">resented </span>
-			            <span style="font-size: 24px;">by:</span>
-			            <font color="#ffff00" style="font-size: 24px; font-family: inherit; font-style: inherit; font-variant: inherit;"> Ashwin Hegde</font>
-			            <br/>
-			        </p>
-			    </section>
-			    <section data-id="153906fa12617e0e9c572b5397b993e3" class="">
-			        <h2 style="text-align: center;" align="left">Agenda</h2>
-			        <div align="left">
-			            <ul>
-			                <li>
-			                    <span style="text-align: center;">Introduction to Node.js ?</span>
-			                    <br/>
-			                    <p></p>
-			                </li>
-			            </ul>
-			            <ul>
-			                <li>
-			                    <span style="text-align: center;">History.</span>
-			                    <br/>
-			                </li>
-			                <li>
-			                    <p>Design &amp; similar environments.</p>
-			                </li>
-			                <li>
-			                    <p>Architecture.</p>
-			                </li>
-			                <li>
-			                    <p>
-			                        <span>Benefits.</span>
-			                    </p>
-			                </li>
-			                <li>
-			                    <p>
-			                        <span>Drawbacks.</span>
-			                    </p>
-			                </li>
-			                <li>
-			                    <p>Companies using Node.js &amp; Node.js hosting.</p>
-			                </li>
-			                <li>
-			                    <p>Case studies - Nebula and Grunt.</p>
-			                </li>
-			            </ul>
-			        </div>
-			    </section>
-			    <section data-id="89c6d3c2d948e2c9ed64d3265cedddc6" class="stack">
-			        <section data-id="eab4eb16f7e32815167c4ee8a9668252" class="">
-			            <h2 style="text-align: center;" align="left">What is Node.js ?</h2>
-			            <div align="left">
-			                <ul>
-			                    <li>An 
-			                        <font color="#ffff00">open source</font>&nbsp;
-			                        <font color="#ffff00">cross-platform</font> built on 
-			                        <span style="color: yellow;">Chrome's JavaScript runtime</span>
-			                        <font color="#ffffff">
-			                            <span>&nbsp;environment.</span>
-			                        </font>
-			                    </li>
-			                </ul>
-			                <font color="#ffffff">
-			                    <span>
-			                        <br/>
-			                    </span>
-			                    <span>
-			                        <br/>
-			                    </span>
-			                </font>
-			            </div>
-			            <div align="left">
-			                <ul>
-			                    <li>Uses an 
-			                        <font color="#ffff00">event-driven</font>, 
-			                        <font color="#ffff00">non-blocking I/O</font> model.
-			                    </li>
-			                </ul>
-			                <div align="left">
-			                    <br/>
-			                </div>
-			                <ul>
-			                    <li>Written in C/C++ &amp; JavaScript &amp; its apps are written in JavaScript.</li>
-			                </ul>
-			                <div align="left">
-			                    <br/>
-			                </div>
-			                <ul>
-			                    <li>Used commonly for 
-			                        <font color="#ffff00">real-time</font> web apps.
-			                    </li>
-			                </ul>
-			            </div>
-			        </section>
-			        <section class="" data-id="5159be07172c193d5affe1fbad801992">
-			            <h2>
-			                <br/>
-			            </h2>
-			            <div>
-			                <li style="text-align: left; font-size: 35.87535858154297px; font-style: normal; font-variant: normal;">Applications are run as&nbsp;
-			                    <font color="#ffff00">single-threaded</font>.
-			                </li>
-			                <br/>
-			                <li style="text-align: left; font-size: 35.87535858154297px; font-style: normal; font-variant: normal;">Build-in&nbsp;
-			                    <span style="color: yellow;">asynchronous I/O
-			                        <font color="#ffffff">,&nbsp;</font>file-system
-			                        <font color="#d9d9d9">, &nbsp;</font>socket
-			                    </span>
-			                    <font color="#ffffff">, &nbsp;</font>
-			                    <font color="#ffff00">HTTP&nbsp;</font>
-			                    <font color="#ffffff">&amp;</font>
-			                    <font color="#ffff00">&nbsp;cluster</font>
-			                    <font color="#ffffff">.</font>
-			                </li>
-			                <font color="#ffffff">
-			                    <span>
-			                        <br/>
-			                    </span>
-			                </font>
-			                <li style="text-align: left; font-size: 35.87535858154297px; font-style: normal; font-variant: normal;">
-			                    <span style="color: yellow;">
-			                        <font color="#ffffff">Acts as a&nbsp;
-			                            <font color="#ffff00">web server</font>.
-			                        </font>
-			                    </span>
-			                </li>
-			                <font color="#ffffff">
-			                    <span>
-			                        <br/>
-			                    </span>
-			                </font>
-			                <li style="text-align: left; font-size: 35.87535858154297px; font-style: normal; font-variant: normal;">
-			                    <span>The ability to write JavaScript on the server.</span>
-			                    <br/>
-			                </li>
-			            </div>
-			        </section>
-			    </section>
-			    <section data-id="001dea42abb59887cfd1b6c3343b2034" class="">
-			        <h2 style="text-align: center;" align="left">History</h2>
-			        <div align="left">
-			            <ul>
-			                <li>
-			                    <font style="font-size: 24px;">Created by </font>
-			                    <span style="color: yellow;">Ryan Dahl
-			                        <font color="#ffffff">
-			                            <font style="font-size: 24px;">and first&nbsp;</font>
-			                        </font>
-			                    </span>
-			                    <span style="color: yellow;">
-			                        <font color="#ffffff">
-			                            <font style="font-size: 24px;">published in </font>2009, could only run on Linux.
-			                        </font>
-			                    </span>
-			                </li>
-			                <li>
-			                    <span>
-			                        <font style="font-size: 24px;">Sponsored by </font>
-			                    </span>
-			                    <span style="color: yellow;">Joyent</span>
-			                    <span>.</span>
-			                    <br/>
-			                </li>
-			                <li>
-			                    <font style="font-size: 24px;">June </font>2011, 
-			                    <font color="#ffff00">Microsoft partnered with Joyent</font>
-			                    <font style="font-size: 24px;">to help create a native </font>Windows 
-			                    <font style="font-size: 24px;">version of Node.js.</font>
-			                </li>
-			                <li>
-			                    <font style="font-size: 24px;">Janunary </font>2012, 
-			                    <font color="#ffff00">Dahl stepped aside</font>, 
-			                    <font style="font-size: 24px;">npm creator</font>
-			                    <font color="#ffff00">Isaac Schlueter</font>
-			                    <font style="font-size: 24px;">manage the project.</font>
-			                </li>
-			                <li>
-			                    <font style="font-size: 24px;">January </font>2014, 
-			                    <font color="#ffff00">Timothy J. Fontaine</font>
-			                    <font style="font-size: 24px;">became new project lead.</font>
-			                </li>
-			                <li>
-			                    <font style="font-size: 24px;">December</font> 2014, 
-			                    <font color="#ffff00">Fedor Indutny </font>started 
-			                    <font color="#ffff00">IO.js</font>
-			                </li>
-			            </ul>
-			        </div>
-			    </section>
-			    <section data-id="5f22eb5c85a12209c4d051da3a0a8a99" class="stack">
-			        <section data-id="dbd14e2a7a28e9feb24e2b08ec55af7b" class="">
-			            <h2>Under the hood</h2>
-			            <div>
-			                <br/>
-			            </div>
-			            <div>
-			                <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/508552/under-the-hood.png"/>
-			            </div>
-			            <div>
-			                <span style="text-align: left;">Runs JavaScript on the server.</span>
-			                <br/>
-			            </div>
-			        </section>
-			        <section class="" data-id="ae7e65cf1db2e70789f973aa89a30f6e">
-			            <h2 style="font-style: normal; font-variant: normal;">code block</h2>
-			            <pre>var ws = require('websocket.io'), 
-			                <br/>server = ws.listen(3000);
-			                <br/>
-			                <br/>server.on('
-			                <font color="#ffff00">connection</font>', function (socket) {
-			                <br/>
-			                <br/>    console.log('connected to client');
-			                <br/>    socket.send('You connected to a web socket!');
-			                <br/>
-			                <br/>    socket.on('message', function (data) { 
-			                <br/>	console.log('message received:', data);
-			                <br/>    });
-			                <br/>
-			                <br/>    socket.on('close', function () { 
-			                <br/>		console.log('socket closed!');
-			                <br/>    });
-			                <br/>});
-			                <br/>
-			            </pre>
-			            <br/>
-			        </section>
-			        <section data-id="44224e70e3863a7835c4ac01c332662a" class="">
-			            <h2>Similar environments</h2>
-			            <div>
-			                <br/>
-			            </div>
-			            <div align="left">
-			                <ul>
-			                    <li>
-			                        <a href="http://en.wikipedia.org/wiki/Tornado_%28web_server%29" title="Tornado (web server)">Tornado</a> and 
-			                        <a href="http://en.wikipedia.org/wiki/Twisted_%28software%29" title="Twisted (software)">Twisted</a> for Python.
-			                        <br/>
-			                    </li>
-			                </ul>
-			            </div>
-			            <div align="left">
-			                <ul>
-			                    <li>
-			                        <a href="http://en.wikipedia.org/wiki/Perl_Object_Environment" title="Perl Object Environment">Perl Object Environment</a> for 
-			                        <font color="#ffffff">
-			                            <a href="http://en.wikipedia.org/wiki/Perl" title="Perl">Perl</a>
-			                        </font>.
-			                        <br/>
-			                    </li>
-			                </ul>
-			            </div>
-			            <div align="left">
-			                <ul>
-			                    <li>
-			                        <a href="http://en.wikipedia.org/wiki/Vert.x" title="Vert.x">Vert.x</a> for Java.
-			                        <br/>
-			                    </li>
-			                </ul>
-			            </div>
-			            <div align="left">
-			                <ul>
-			                    <li>
-			                        <a href="http://en.wikipedia.org/wiki/EventMachine" title="EventMachine">EventMachine</a> for 
-			                        <font color="#ffffff">
-			                            <a href="http://en.wikipedia.org/wiki/Ruby_%28programming_language%29" title="Ruby (programming language)">Ruby</a>
-			                        </font>.
-			                    </li>
-			                </ul>
-			                <p>
-			                    <br/>
-			                </p>
-			            </div>
-			            <p> Unlike most JavaScript programs, Node.js is not executed in a web browser, but instead as a 
-			                <a href="http://en.wikipedia.org/wiki/Server-side_JavaScript" title="Server-side JavaScript" class="mw-redirect">server-side JavaScript</a> application.
-			            </p>
-			        </section>
-			    </section>
-			    <section data-id="0e1bdf64a282747fd01a643a635c632c" class="">
-			        <h2 style="text-align: center;" align="left">
-			            <span class="mw-headline" id="Architecture">Architecture</span>
-			        </h2>
-			        <div align="center">
-			            <h2 style="font-style: normal; font-variant: normal;">
-			                <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/508557/NodeJS-EventedIOAsyncIO.png"/>
-			            </h2>
-			        </div>
-			    </section>
-			    <section class="stack" data-id="3b6f7f52ec0401d47059487779f953a2">
-			        <section data-id="7140fbb127d653106c12a7b08618acae" class="">
-			            <h2 style="text-align: center;" align="left">
-			                <span class="mw-headline" id="Advantages_and_drawbacks">benefits</span>
-			            </h2>
-			            <div align="justify">
-			                <ul>
-			                    <li>Savings in I/O cost (i.e., high performance)
-			                        <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/509149/apache-vs-nginx.png" style="text-align: center; width: 689.505px; height: 472.035px; max-height: none; max-width: none;"/>
-			                    </li>
-			                </ul>
-			            </div>
-			        </section>
-			        <section class="" data-id="93ecada380630c8dce14e1cd3abb9934">
-			            <div style="text-align: left;">
-			                <ul>
-			                    <li style="text-align: left;">
-			                        <span style="text-align: center;">Savings in Memory.</span>
-			                        <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/509155/apache-vs-nginx-memory.png" style="width: 773.542px; height: 531.716px; max-height: none; max-width: none;"/>
-			                    </li>
-			                </ul>
-			            </div>
-			        </section>
-			        <section class="" data-id="7da5620df9f563294d39f1d9abaf1cfe">
-			            <div style="text-align: left;">
-			                <ul>
-			                    <li>End-2-End JavaScript/Coffee-Script.</li>
-			                    <li>Thousands of libraries. Search at 
-			                        <a href="http://npmjs.org">npmjs.org</a>
-			                        <br/>
-			                    </li>
-			                    <li>2nd most popular watched project on Github.</li>
-			                    <li>Build cli based tools such as Grunt or Make.</li>
-			                    <li>Build high-performance, high I/O, TCP apps like proxy servers, PaaS, databases, etc.</li>
-			                    <li>Build a (soft) real-time social app like Twitter or a chat app.</li>
-			                    <li>
-			                        <span>Add a RESTful API-based web server in front of an application server.</span>
-			                        <br/>
-			                    </li>
-			                </ul>
-			            </div>
-			        </section>
-			    </section>
-			    <section data-id="72b092a8e8ee22d592de5089e08a5972" class="">
-			        <h2 style="text-align: center;" align="left">Drawbacks</h2>
-			        <div style="text-align: left;">
-			            <ul>
-			                <li>Libraries are still 
-			                    <font color="#ffff00">in developed</font>.
-			                </li>
-			                <li>Many libraries, such as the SAML auth library which is required for enterprise apps, are in development available yet.
-			                    <br/>
-			                </li>
-			                <li>
-			                    <font color="#ffff00">Learning curve burden</font> to server-side programmers.
-			                    <br/>
-			                </li>
-			                <li>Asynchronous and event-driven code inherently adds more 
-			                    <font color="#ffff00">complexity </font>to the code versus a synchronous code.
-			                </li>
-			            </ul>
-			        </div>
-			        <div align="left"></div>
-			    </section>
-			    <section class="stack" data-id="9b3b0f6b1bb6a951e57e5b1ab218e986">
-			        <section data-id="0da3700dae323420bf98f1067ff3f43c" class="">
-			            <h2 style="text-align: center;" align="left">Companies using Node.js</h2>
-			            <div>
-			                <br/>
-			            </div>
-			            <div align="left">
-			                <ul>
-			                    <li>Amazon, Google,&nbsp;
-			                        <span>Microsoft,&nbsp;</span>
-			                        <span>Yahoo,&nbsp;</span>
-			                        <span>Linkedin,&nbsp;</span>
-			                        <span>Paypal, SAP, Walmart, StrongLoop, e-Bay etc.&nbsp;</span>
-			                    </li>
-			                    <li>For more information visit 
-			                        <a href="http://nodejs.org/industry/">http://nodejs.org/industry/</a>
-			                    </li>
-			                </ul>
-			            </div>
-			        </section>
-			        <section class="" data-id="379c85a5066e842a5d3c7b884a9054b2">
-			            <h2>Node.js Hosting</h2>
-			            <div>
-			                <br/>
-			            </div>
-			            <div style="text-align: left;">
-			                <ul>
-			                    <li>
-			                        <span>Managed providers provide a "Node Appliance" solution. Node and NPM will already be set up for you, and deploys are typically done via git push or similar method.&nbsp;</span>
-			                        <br/>
-			                    </li>
-			                </ul>
-			                <div>
-			                    <br/>
-			                </div>
-			                <div>
-			                    <ul>
-			                        <li>Joyent, Amazon EC, Redhat OpenShift, Heroku, Nodejitsu,&nbsp;
-			                            <span style="font-size: 36.039127349853516px; font-style: normal; font-variant: normal;">Windows Azure,&nbsp;</span>
-			                            <span style="font-size: 36.039127349853516px; font-style: normal; font-variant: normal;">Baidu App&nbsp;Engine,&nbsp;</span>Cloudnode, Cloud Foundry, appfog etc.
-			                            <br/>
-			                        </li>
-			                        <li>For more information visit 
-			                            <a href="github.com/joyent/node/wiki/node-hosting">github.com/joyent/node/wiki/node-hosting</a>
-			                        </li>
-			                    </ul>
-			                </div>
-			            </div>
-			        </section>
-			    </section>
-			    <section class="" data-id="bae3aeb7ae289c5606e0c24155da809a">
-			        <h2>Case studies</h2>
-			        <div>
-			            <br/>
-			        </div>
-			        <div style="text-align: left;">
-			            <ol>
-			                <li>
-			                    <span>Cybage UI - IMS [ Backbone Stack + Nodejs Stack with MySQL Enterprise, ORM, Nodemailer ].</span>
-			                    <br/>
-			                </li>
-			                <li>
-			                    <a href="https://slides.com/ashwinhegde/deck/github.com/hegdeashwin/Nebula">
-			                        <font color="#ffffff">github.com/hegdeashwin/</font>Nebula
-			                    </a>&nbsp;
-			                    <font style="font-size: 24px;">[Backbone.js + Express]</font>.
-			                </li>
-			                <li>
-			                    <font color="#ffffff">github.com/hegdeahwin/</font>
-			                    <font color="#6d9eeb">Boneloop</font>
-			                    <font style="font-size: 24px;">[Backbone.js + Loopback]</font>.
-			                </li>
-			                <li>github.com/hegdeashwin/
-			                    <font color="#e69138">Nodemyadmin</font>
-			                    <font style="font-size: 24px;">[Angular.js + Loopback]</font>.
-			                </li>
-			                <li>github.com/hegdeashwin/
-			                    <font color="#b6d7a8">Nodecart</font>
-			                    <font style="font-size: 24px;">[Ember.js + Hapi].</font>
-			                </li>
-			            </ol>
-			        </div>
-			    </section>
-			    <section data-id="a648afe26118f1c242e1815789d7640d" class="">
-			        <h2>&nbsp;
-			            <span>Thank You</span>
-			        </h2>
-			        <p>
-			            <br/>Follow me at
-			        </p>
-			        <p>
-			            <a href="github.com/hegdeashwin">github.com/hegdeashwin</a>
-			        </p>
-			    </section>
-			</div>
+    <section data-id="e5d5666c6471e4c96edbf555accf3f68" class="">
+        <h2>Introduction to</h2>
+        <h2>
+            <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/1200496/Screenshot_from_2015-03-24_21_24_52.png" style="font-size: 135.72px; width: 718.3259531527867px; height: 395.7575671660657px; max-height: none; max-width: none;"/>
+            <br/>
+        </h2>
+        <p>
+            <span style="font-size: 24px; font-style: normal; font-variant: normal;">Created /P</span>
+            <span style="font-size: 24px;">resented </span>
+            <span style="font-size: 24px;">by:</span>
+            <font color="#ffff00" style="font-size: 24px; font-family: inherit; font-style: inherit; font-variant: inherit;"> Ashwin Hegde</font>
+            <br/>
+        </p>
+    </section>
+    <section data-id="153906fa12617e0e9c572b5397b993e3" class="">
+        <h2 style="text-align: center;" align="left">Section 1 : Agenda</h2>
+        <div align="left">
+            <ul>
+                <li>
+                    <p>Introduction to Node.js ?</p>
+                </li>
+                <li>
+                    <p>History.</p>
+                </li>
+                <li>
+                    <p>Design &amp; similar environments.</p>
+                </li>
+                <li>
+                    <p>Architecture.</p>
+                </li>
+                <li>
+                    <p>Benefits.</p>
+                </li>
+                <li>
+                    <p>Drawbacks.</p>
+                </li>
+                <li>
+                    <p>Companies using Node.js &amp; Node.js hosting.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section data-id="eab4eb16f7e32815167c4ee8a9668252" class="">
+        <h3>What is Node.js ?</h3>
+        <div align="left">
+            <ul>
+                <li>
+                    <font color="#ffff00">Open source</font>
+                    <font style="font-size: 24px;">&nbsp;&amp;&nbsp;
+            </font>
+                    <span style="color: rgb(255, 255, 0);">Cross-platform&nbsp;</span>
+                    <span style="font-style: normal; font-variant: normal;">
+                        <font style="font-size: 24px;">project</font>
+                    </span>
+                    <span style="font-size: 35.87535858154297px; font-style: normal; font-variant: normal;">.</span>
+                </li>
+                <li>
+                    <font style="font-size: 24px;">Built on 
+            </font>
+                    <span style="color: yellow;">Chrome's JavaScript runtime</span>
+                    <font color="#ffffff">
+                        <font style="font-size: 24px;">environment</font>.
+            
+                    </font>
+                </li>
+            </ul>
+        </div>
+        <div align="left">
+            <ul>
+                <li>
+                    <font color="#ffff00">Event-driven </font>
+                    <font color="#ffffff" style="font-size: 24px;">&amp;</font>
+                    <font color="#ffff00">&nbsp;</font>
+                    <font color="#ffff00" style="font-family: inherit; font-style: inherit; font-variant: inherit;">Non-blocking I/O</font>
+                    <font style="font-size: 24px;">model</font>.
+                </li>
+            </ul>&nbsp;
+        </div>
+        <div align="left">
+            <ul>
+                <li>
+                    <font style="font-size: 24px;">Written in C/C++ &amp; JavaScript &amp; its apps are written in </font>
+                    <font style="font-size: 42px;" color="#ffff00">JavaScript</font>
+                    <font style="font-size: 24px;">.</font>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span>
+                        <font style="font-size: 24px;">Used commonly for </font>
+                    </span>
+                    <font color="#ffff00" style="font-family: inherit; font-style: inherit; font-variant: inherit;">real-time</font>
+                    <span>
+                        <font style="font-size: 24px;"> web apps.</font>
+                    </span>
+                    <br/>
+                </li>
+                <li>
+                    <font color="#ffff00">Single-threaded</font>
+                    <span style="font-size: 35.87535858154297px; font-style: normal; font-variant: normal;">.</span>
+                    <br/>
+                </li>
+                <li>
+                    <span style="font-style: normal; font-variant: normal;">
+                        <span style="font-style: normal; font-variant: normal;">
+                            <font style="font-size: 24px;">Build-in&nbsp;</font>
+                        </span>
+                        <span style="font-size: 35.87535858154297px; font-style: normal; font-variant: normal; color: yellow;">asynchronous I/O
+                            <font color="#ffffff">,&nbsp;</font>file-system
+                            <font color="#d9d9d9">, &nbsp;</font>socket
+                        </span>
+                        <font color="#ffffff" style="font-size: 35.87535858154297px;">, &nbsp;</font>
+                        <font color="#ffff00" style="font-size: 35.87535858154297px;">HTTP</font>
+                        <font style="font-size: 24px;">
+                            <font color="#ffff00">&nbsp;</font>
+                            <font color="#ffffff">&amp;</font>
+                        </font>
+                        <font color="#ffff00" style="font-size: 35.87535858154297px;">&nbsp;cluster</font>
+                        <font color="#ffffff" style="font-size: 35.87535858154297px;">.</font>
+                        <br/>
+                    </span>
+                </li>
+                <li>
+                    <span style="font-style: normal; font-variant: normal;">
+                        <font color="#ffffff">
+                            <span style="font-style: normal; font-variant: normal;">
+                                <font style="font-size: 24px;">Acts as a&nbsp;</font>
+                            </span>
+                            <font color="#ffff00" style="font-size: 35.87535858154297px;">web server</font>
+                            <span style="font-size: 35.87535858154297px; font-style: normal; font-variant: normal;">.</span>
+                            <br/>
+                        </font>
+                    </span>
+                </li>
+                <li>
+                    <span style="font-style: normal; font-variant: normal;">
+                        <span style="font-style: normal; font-variant: normal;">
+                            <span style="color: rgb(238, 238, 238); font-style: normal; font-variant: normal;">
+                                <font style="font-size: 24px;">The ability to write </font>
+                            </span>
+                            <span style="font-size: 35.87535858154297px; font-style: normal; font-variant: normal;">
+                                <font color="#ffff00">JavaScript on the server</font>
+                            </span>
+                            <span style="color: rgb(238, 238, 238); font-size: 35.87535858154297px; font-style: normal; font-variant: normal;">.</span>
+                            <br/>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="stack" data-id="c223e7711ddad8edd37a7f5c788bbe8e">
+        <section class="" data-id="a364b78dfbe5765b3778fbfb0cde44db">
+            <h2 align="left" style="text-align: center; font-style: normal; font-variant: normal;">HISTORY</h2>
+            <div>
+                <br/>
+            </div>
+            <div>
+                <ul style="font-size: 35.90078353881836px; font-style: normal; font-variant: normal;">
+                    <li>
+                        <font style="font-size: 24px;">Created by&nbsp;</font>
+                        <span style="color: yellow;">Ryan Dahl
+                
+                            <font color="#ffffff">&nbsp;
+                    
+                                <font style="font-size: 24px;">and first&nbsp;</font>
+                            </font>
+                        </span>
+                        <span style="color: yellow;">
+                            <font color="#ffffff">
+                                <font style="font-size: 24px;">published in&nbsp;</font>2009,&nbsp;
+                    
+                                <font style="font-size: 24px;">could &nbsp;O</font>nly&nbsp;
+                    
+                                <font style="font-size: 24px;">run on&nbsp;</font>Linux.
+                            </font>
+                        </span>
+                        <img style="float: right" src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/1204734/ryandahl.png"/>
+                    </li>
+                    <li>
+                        <font style="font-size: 24px;">Sponsored by&nbsp;</font>&nbsp;
+                        <span style="color: yellow;">Joyent</span>.&nbsp;
+                    </li>
+                    <li>
+                        <font style="font-size: 24px;">June&nbsp;</font>2011,&nbsp;&nbsp;
+                        <font color="#ffff00">Microsoft partnered with Joyent</font>&nbsp;&nbsp;
+                        <font style="font-size: 24px;">to help create a native&nbsp;</font>Windows&nbsp;&nbsp;
+                        <font style="font-size: 24px;">version of Node.js.</font>
+                    </li>
+                </ul>&nbsp; &nbsp; &nbsp;
+                <br/>
+            </div>
+        </section>
+        <section class="" data-id="e44db857502ccb335a49da425386ce3b">
+            <h2 style="text-align: left; ">
+                <br/>
+            </h2>
+            <div>
+                <li style="text-align: left; font-size: 35.90078353881836px; font-style: normal; font-variant: normal;">
+                    <font style="font-size: 24px;">January&nbsp;</font>2012, 
+                    <font color="#ffff00">
+                        <span style="font-size: 36px; font-style: normal; font-variant: normal;">Ryan&nbsp;</span>stepped aside
+                    </font>, 
+                    <font style="font-size: 24px;">npm creator
+                        <span>&nbsp;</span>
+                    </font>
+                    <font color="#ffff00">Isaac Schlueter</font>&nbsp;
+        
+                    <font style="font-size: 24px;">manage the project.</font>
+                    <img style="float:right" src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/1204744/issacshlueter.png"/>
+                </li>
+            </div>
+        </section>
+        <section class="" data-id="b04c06c1ea224cb1b02aeeef5b53aaa0">
+            <h2>
+                <br/>
+            </h2>
+            <div>
+                <li style="font-size: 35.90078353881836px; font-style: normal; font-variant: normal; text-align: left;">
+                    <div style="text-align: left;">
+                        <font style="font-family: inherit; font-style: inherit; font-variant: inherit; font-size: 24px;">January&nbsp;</font>
+                        <span>2014,&nbsp;&nbsp;&nbsp;
+        </span>
+                        <font color="#ffff00" style="font-family: inherit; font-style: inherit; font-variant: inherit;">Timothy J. Fontaine</font>
+                        <span>&nbsp;
+        </span>
+                        <font style="font-family: inherit; font-style: inherit; font-variant: inherit; font-size: 24px;">became new project lead.</font>
+                    </div>
+                    <img style="text-align: center; float: right;" src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/1204754/PvPna9Xp_400x400.jpeg"/>
+                </li>
+            </div>
+        </section>
+        <section class="" data-id="e63646e9eb27d7b0da477dbdce6aac2a">
+            <h2>
+                <br/>
+            </h2>
+            <div>
+                <ul>
+                    <li>
+                        <font style="font-family: inherit; font-style: inherit; font-variant: inherit; font-size: 24px;">December</font>
+                        <span style="font-size: 35.87535858154297px; font-style: normal; font-variant: normal;">&nbsp;2014,&nbsp;&nbsp;</span>
+                        <span style="font-size: 35.87535858154297px; font-style: normal; font-variant: normal;">&nbsp;</span>
+                        <font color="#ffff00" style="font-family: inherit; font-style: inherit; font-variant: inherit;">Fedor Indutny&nbsp;</font>
+                        <span style="font-size: 35.87535858154297px; font-style: normal; font-variant: normal;">started&nbsp;&nbsp;</span>
+                        <span style="font-size: 35.87535858154297px; font-style: normal; font-variant: normal;">&nbsp;</span>
+                        <font color="#ffff00" style="font-family: inherit; font-style: inherit; font-variant: inherit;">IO.js</font>
+                        <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/1204763/16c78cd.jpg" style="width: 388.14883138156904px; height: 388.14883138156904px; max-height: none; max-width: none;"/>
+                        <br/>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </section>
+    <section data-id="5f22eb5c85a12209c4d051da3a0a8a99" class="stack">
+        <section data-id="dbd14e2a7a28e9feb24e2b08ec55af7b" class="">
+            <h2>Under the hood</h2>
+            <div>
+                <br/>
+            </div>
+            <div>
+                <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/508552/under-the-hood.png"/>
+            </div>
+            <div>
+                <span style="text-align: left;">Runs JavaScript on the server.</span>
+                <br/>
+            </div>
+        </section>
+        <section class="" data-id="ae7e65cf1db2e70789f973aa89a30f6e">
+            <h2 style="font-style: normal; font-variant: normal;">code block</h2>
+            <pre>var ws = require('websocket.io'), 
+                <br/>server = ws.listen(3000);
+                <br/>
+                <br/>server.on('
+                <font color="#ffff00">connection</font>', function (socket) {
+                <br/>
+                <br/>    console.log('connected to client');
+                <br/>    socket.send('You connected to a web socket!');
+                <br/>
+                <br/>    socket.on('message', function (data) { 
+                <br/>	console.log('message received:', data);
+                <br/>    });
+                <br/>
+                <br/>    socket.on('close', function () { 
+                <br/>		console.log('socket closed!');
+                <br/>    });
+                <br/>});
+                <br/>
+            </pre>
+            <br/>
+        </section>
+        <section data-id="44224e70e3863a7835c4ac01c332662a" class="">
+            <h2>Similar environments</h2>
+            <div>
+                <br/>
+            </div>
+            <div align="left">
+                <ul>
+                    <li>
+                        <a href="http://en.wikipedia.org/wiki/Tornado_%28web_server%29" title="Tornado (web server)">Tornado</a> and 
+                        <a href="http://en.wikipedia.org/wiki/Twisted_%28software%29" title="Twisted (software)">Twisted</a> for Python.
+                        <br/>
+                    </li>
+                </ul>
+            </div>
+            <div align="left">
+                <ul>
+                    <li>
+                        <a href="http://en.wikipedia.org/wiki/Perl_Object_Environment" title="Perl Object Environment">Perl Object Environment</a> for 
+                        <font color="#ffffff">
+                            <a href="http://en.wikipedia.org/wiki/Perl" title="Perl">Perl</a>
+                        </font>.
+                        <br/>
+                    </li>
+                </ul>
+            </div>
+            <div align="left">
+                <ul>
+                    <li>
+                        <a href="http://en.wikipedia.org/wiki/Vert.x" title="Vert.x">Vert.x</a> for Java.
+                        <br/>
+                    </li>
+                </ul>
+            </div>
+            <div align="left">
+                <ul>
+                    <li>
+                        <a href="http://en.wikipedia.org/wiki/EventMachine" title="EventMachine">EventMachine</a> for 
+                        <font color="#ffffff">
+                            <a href="http://en.wikipedia.org/wiki/Ruby_%28programming_language%29" title="Ruby (programming language)">Ruby</a>
+                        </font>.
+                    </li>
+                </ul>
+                <p>
+                    <br/>
+                </p>
+            </div>
+            <p> Unlike most JavaScript programs, Node.js is not executed in a web browser, but instead as a 
+                <a href="http://en.wikipedia.org/wiki/Server-side_JavaScript" title="Server-side JavaScript" class="mw-redirect">server-side JavaScript</a> application.
+            </p>
+        </section>
+    </section>
+    <section data-id="0e1bdf64a282747fd01a643a635c632c" class="">
+        <h2 style="text-align: center;" align="left">
+            <span class="mw-headline" id="Architecture">Architecture</span>
+        </h2>
+        <div align="center">
+            <h2 style="font-style: normal; font-variant: normal;">
+                <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/508557/NodeJS-EventedIOAsyncIO.png"/>
+            </h2>
+        </div>
+    </section>
+    <section class="stack" data-id="3b6f7f52ec0401d47059487779f953a2">
+        <section data-id="7140fbb127d653106c12a7b08618acae" class="">
+            <h2 style="text-align: center;" align="left">
+                <span class="mw-headline" id="Advantages_and_drawbacks">benefits</span>
+            </h2>
+            <div align="justify">
+                <ul>
+                    <li>Savings in I/O cost (i.e., high performance)
+                        <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/509149/apache-vs-nginx.png" style="text-align: center; width: 689.505px; height: 472.035px; max-height: none; max-width: none;"/>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="" data-id="93ecada380630c8dce14e1cd3abb9934">
+            <div style="text-align: left;">
+                <ul>
+                    <li style="text-align: left;">
+                        <span style="text-align: center;">Savings in Memory.</span>
+                        <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/509155/apache-vs-nginx-memory.png" style="width: 773.542px; height: 531.716px; max-height: none; max-width: none;"/>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="" data-id="7da5620df9f563294d39f1d9abaf1cfe">
+            <div style="text-align: left;">
+                <ul>
+                    <li>End-2-End JavaScript/Coffee-Script.</li>
+                    <li>Thousands of libraries. Search at 
+                        <a href="http://npmjs.org">npmjs.org</a>
+                        <br/>
+                    </li>
+                    <li>2nd most popular watched project on Github.</li>
+                    <li>Build cli based tools such as Grunt or Make.</li>
+                    <li>Build high-performance, high I/O, TCP apps like proxy servers, PaaS, databases, etc.</li>
+                    <li>Build a (soft) real-time social app like Twitter or a chat app.</li>
+                    <li>
+                        <span>Add a RESTful API-based web server in front of an application server.</span>
+                        <br/>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </section>
+    <section data-id="72b092a8e8ee22d592de5089e08a5972" class="">
+        <h2 style="text-align: center;" align="left">Drawbacks</h2>
+        <div style="text-align: left;">
+            <ul>
+                <li>Libraries are still 
+                    <font color="#ffff00">in developed</font>.
+                </li>
+                <li>Many libraries, such as the SAML auth library which is required for enterprise apps, are in development available yet.
+                    <br/>
+                </li>
+                <li>
+                    <font color="#ffff00">Learning curve burden</font> to server-side programmers.
+                    <br/>
+                </li>
+                <li>Asynchronous and event-driven code inherently adds more 
+                    <font color="#ffff00">complexity </font>to the code versus a synchronous code.
+                </li>
+            </ul>
+        </div>
+        <div align="left"></div>
+    </section>
+    <section class="stack" data-id="9b3b0f6b1bb6a951e57e5b1ab218e986">
+        <section data-id="0da3700dae323420bf98f1067ff3f43c" class="">
+            <h2 style="text-align: center;" align="left">Companies using Node.js</h2>
+            <div>
+                <br/>
+            </div>
+            <div align="left">
+                <ul>
+                    <li>Amazon, Google,&nbsp;
+                        <span>Microsoft,&nbsp;</span>
+                        <span>Yahoo,&nbsp;</span>
+                        <span>Linkedin,&nbsp;</span>
+                        <span>Paypal, SAP, Walmart, StrongLoop, e-bay etc.</span>
+                    </li>
+                    <li>For more information visit 
+                        <a href="http://nodejs.org/industry/">http://nodejs.org/industry/</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="" data-id="379c85a5066e842a5d3c7b884a9054b2">
+            <h2>Node.js Hosting</h2>
+            <div>
+                <br/>
+            </div>
+            <div style="text-align: left;">
+                <ul>
+                    <li>
+                        <span>Managed providers provide a "Node Appliance" solution. Node and NPM will already be set up for you, and deploys are typically done via git push or similar method.&nbsp;</span>
+                        <br/>
+                    </li>
+                </ul>
+                <div>
+                    <br/>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <font color="#ffff00">Joyent</font>, Amazon EC, 
+                            <font color="#ffff00">Redhat OpenShift</font>, 
+                            <font color="#ffff00">Heroku</font>, 
+                            <font color="#ffff00">Nodejitsu</font>,&nbsp;
+                            <span style="font-size: 36.039127349853516px; font-style: normal; font-variant: normal;">Windows Azure,&nbsp;</span>
+                            <span style="font-size: 36.039127349853516px; font-style: normal; font-variant: normal;">Baidu App&nbsp;Engine,&nbsp;</span>Cloudnode, Cloud Foundry, appfog etc.
+                        </li>
+                        <li>For more information visit 
+                            <a href="github.com/joyent/node/wiki/node-hosting">github.com/joyent/node/wiki/node-hosting</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section data-id="a648afe26118f1c242e1815789d7640d" class="">
+        <h2>&nbsp;
+            <span>Thank You</span>
+        </h2>
+        <p>
+            <span>Session 1 :&nbsp;</span>
+            <span>The End</span>
+            <br/>
+        </p>
+        <p>
+            <br/>
+        </p>
+        <p>
+            <br/>Follow me at
+        </p>
+        <p>
+            <a href="github.com/hegdeashwin">github.com/hegdeashwin</a>
+        </p>
+    </section>
+</div>
 		</div>
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
