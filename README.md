@@ -15,7 +15,7 @@ Training kit includes
 <ul>
   <li><strong>Basic Level 1</strong>
     <ul>
-      <li>Session 1: <strong>Introduction to Node.js & npm</strong>. <a href="http://slides.com/ashwinhegde/introduction-to-node-js/live#/" target="_blank">Visit Online Presentation</a></li>
+      <li>Session 1: <strong>Introduction to NodeJS & NPM</strong>. Presentation Links: http://slides.com/ashwinhegde/introduction-to-node-js</li>
       <li>Session 2: <strong>Console, OS & Path related utility functions</strong>.</li>
       <li>Session 3: <strong>Query-String, String-Decoder, Global & Modules related utility functions</strong>.</li>
       <li><strong>Assignments BL-1</strong></li>
