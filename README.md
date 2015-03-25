@@ -1,6 +1,6 @@
 Learning Server-Side JavaScript with Node.js
 ============================================
-This training kit has been developed for those who already have the basic knowledge of JavaScript; This training kit will teach you the basics of NodeJS and NPM (Node Package Manager).
+This training kit has been developed for those who already have the basic knowledge of JavaScript; This training kit will teach you the basics of Node.js and npm Package Manager.
 
 Prerequisites arranged as per the priority 
 ==========================================
@@ -15,7 +15,7 @@ Training kit includes
 <ul>
   <li><strong>Basic Level 1</strong>
     <ul>
-      <li>Session 1: <strong>Introduction to NodeJS & NPM</strong>. <a href="http://slides.com/ashwinhegde/introduction-to-node-js/live#/" target="_blank">Visit Online Presentation</a></li>
+      <li>Session 1: <strong>Introduction to Node.js & npm</strong>. <a href="http://slides.com/ashwinhegde/introduction-to-node-js/live#/" target="_blank">Visit Online Presentation</a></li>
       <li>Session 2: <strong>Console, OS & Path related utility functions</strong>.</li>
       <li>Session 3: <strong>Query-String, String-Decoder, Global & Modules related utility functions</strong>.</li>
       <li><strong>Assignments BL-1</strong></li>
@@ -85,7 +85,7 @@ Contributors
 Developed &amp; maintained by author: <b>Ashwin Hegde</b><br>
 Follow me at: <a href="//github.com/hegdeashwin" target="_blank">github</a> | <a href="//in.linkedin.com/in/hegdeashwin" target="_blank">Linkedin</a> | <a href="//twitter.com/hegdeashwin3" target="_blank">Twitter</a>
 
-Visit the following link to know about NodeJS current training updates<br>
+Visit the following link to know about Node.js current training updates<br>
 Home: <a href="//github.com/hegdeashwin/Server-Side-Node.js" target="_blank">github.com/hegdeashwin/Server-Side-Node.js</a>
   
 If you find any typo errors, enhancements or questions; please feel free to log it on following link<br>
@@ -95,22 +95,4 @@ License
 =======
 The MIT License (MIT)
 
-Copyright (c) 2014 Ashwin Hegde
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
-the Software, and to permit persons to whom the Software is furnished to do so,
-subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
+Copyright (c) 2015 Ashwin Hegde
