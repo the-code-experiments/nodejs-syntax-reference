@@ -48,10 +48,8 @@ console.warn("Warn: Warning Message");
  * console.time() will mark a time.
  * console.timeEnd() will finish timer, record output.
 */
-console.time('Time-Calculations-Start');
+console.time('calculation');
 for (var i = 0; i < 1000000000; i++) {
   ;
 }
-console.timeEnd('Time-Calculations-End');
-
-console.dir(.);
+console.timeEnd('calculation');
