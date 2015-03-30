@@ -12,7 +12,7 @@ This training kit has been developed for those who already have the basic knowle
 
 * Basic Level 1
   <ul>
-    <li>Session 1: <strong>Introduction to NodeJS</strong>. Presentation Links: http://slides.com/ashwinhegde/introduction-to-node-js</li>
+    <li>Session 1: <strong>Introduction to Node.js</strong>. Presentation Links: http://slides.com/ashwinhegde/introduction-to-node-js</li>
     <li>Session 2: <strong>Introduction to npm</strong>. Presentation Links: http://slides.com/ashwinhegde/introduction-to-npm</li>
     <li>Session 3: <strong>Console, OS & Path related utility functions</strong>.</li>
     <li>Session 4: <strong>Query-String, String-Decoder, Global & Modules related utility functions</strong>.</li>
@@ -47,7 +47,7 @@ This training kit has been developed for those who already have the basic knowle
 Clone the repository and start running the examples with Node.js and browse the codes with ready commits or 
 you can also experiment with the code online through Cloud environment which is powered by Cloud9 IDE.
 
-<a href="//github.com/hegdeashwin/NodeJS/archive/master.zip" target="_blank">Download this repository</a> or <a href="//c9.io/hegdeashwin/Server-side-nodejs" target="_blank">Experiment online</a>
+<a href="//github.com/hegdeashwin/Server-Side-Node.js/archive/master.zip" target="_blank">Download this repository</a> or <a href="//c9.io/hegdeashwin/Server-side-nodejs" target="_blank">Experiment online</a>
 
 ## Recommended text editor/IDE
 
