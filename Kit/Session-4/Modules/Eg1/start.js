@@ -1,5 +1,5 @@
 /***
- * The goal of this file is to understanding about the module functions;
+ * The goal of this file is to know about the Mobules functions;
  *
  *
  * How to run this example:
@@ -7,10 +7,13 @@
  * 2. See the message get displayed on prompt.
  */
 
+var circle = require('./circle.js');
+console.log("The area of a circle of radius 4 is: " + circle.area(4));
 
-console.log('Starting...[start.js]');
 
-var a = require('./program-a.js');
-var b = require('./program-b.js');
+var square = require('./square.js');
+var mySquare1 = square(2);
+var mySquare2 = square(4);
+console.log('The area of my square 1 is: ' + mySquare1.area());
+console.log('The area of my square 2 is: ' + mySquare2.area());
 
-console.log('In file start.js: a.done = %j, b.done = %j', a.done, b.done);
