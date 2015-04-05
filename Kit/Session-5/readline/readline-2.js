@@ -24,8 +24,9 @@ rl.question("What do you think of Node.js ? ", function(answer) {
 function completer(line) {
 	var completions = 'excellent good bad'.split(' ');
 	var hits = completions.filter(function(c) {
-		return c.indexOf(line) == 0;
+		return c.indexOf(line) === 0;
 	});
 
+	// show all completions if none found
 	return [hits.length ? hits : completions, line];
 }

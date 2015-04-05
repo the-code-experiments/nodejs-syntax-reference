@@ -25,3 +25,19 @@ fs.rmdir(dirName, function(error) {
 	if (error) throw error;
 	console.log('Directory removed successfully.');
 });
+
+// fs.mkdirSync(dirName);
+// console.log('Directory created successfully.');
+
+// fs.rmdirSync(dirName);
+// console.log('Directory removed successfully.');
+
+// fs.mkdir(dirName, function(error) {
+// 	if (error) throw error;
+// 	console.log('Directory created successfully.');
+
+// 	fs.rmdir(dirName, function(error) {
+// 		if (error) throw error;
+// 		console.log('Directory removed successfully.');
+// 	});
+// });
