@@ -1,6 +1,6 @@
 /***
  * The goal of this file is to know about the readline functions;
- *
+ * and Tiny CLI.
  *
  * How to run this example:
  * 1. node readline-4.js
@@ -29,6 +29,7 @@ rl.on('line', function(line) {
 			break;
 	}
 	rl.prompt();
+	
 }).on('close', function() {
 	console.log('Have a great day!');
 	process.exit(0);

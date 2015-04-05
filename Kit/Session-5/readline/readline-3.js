@@ -14,25 +14,24 @@ var rl = readline.createInterface({
 	output: process.stdout
 });
 
+// Emitted whenever the input stream receives a \n, usually received when the user hits enter, or return. 
 rl.on('line', function(cmd) {
 	console.log('You just typed: ' + cmd);
 });
 
+// Ctrl+C, Ctrl+D
 rl.on('pause', function() {
 	console.log('Readline paused');
 });
 
-rl.on('resume', function() {
-	console.log('Readline resumed');
-});
-
+// Ctrl+D
 rl.on('close', function() {
 	console.log('Readline closed');
 });
 
 rl.on('SIGINT', function() {
 	rl.question('Are you sure you want to exit? ', function(answer) {
-		if(answer.match(/^y(es)?$/i)) {
+		if (answer.match(/^y(es)?$/i)) {
 			rl.pause();
 		}
 	});

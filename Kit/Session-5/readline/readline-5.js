@@ -14,7 +14,7 @@ var rl = readline.createInterface({
 	output: process.stdout
 });
 
-readline.cursorTo(process.stdin, 20, 20);
+readline.cursorTo(process.stdin, 5, 5);
 readline.clearLine(process.stdin, 0);
 
 rl.close();
