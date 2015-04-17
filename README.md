@@ -10,37 +10,17 @@ This training kit has been developed for those who already have the basic knowle
 
 ## Training kit includes
 
-* Basic Level 1
-  <ul>
-    <li>Session 1: <strong>Introduction to Node.js</strong>. Presentation Links: http://slides.com/ashwinhegde/introduction-to-node-js</li>
-    <li>Session 2: <strong>Introduction to npm</strong>. Presentation Links: http://slides.com/ashwinhegde/introduction-to-npm</li>
-    <li>Session 3: <strong>Console, OS & Path related utility functions</strong>.</li>
-    <li>Session 4: <strong>Query-String, String-Decoder, Global & Modules related utility functions</strong>.</li>
-    <li><strong>Assignments BL-1</strong></li>
-  </ul>
-* Basic Level 2
-  <ul>
-    <li>Session 5: <strong>Debugging, File System & Readline related utility functions</strong>.</li>
-    <li>Session 6: <strong>Process, Child Process & Timers related utility functions</strong>.</li>
-    <li>Session 7: <strong>HTTP & Events related utility functions</strong>.</li>
-    <li><strong>Assignments BL-2</strong></li>
-  </ul>
-* Advanced Level 1
-  <ul>
-    <li>Session 8: <strong>HTTPS & Stream related utility functions</strong>.</li>
-    <li>Session 9: <strong>Assertion Testing related utility functions</strong>.</li>
-    <li>Session 10: <strong>Node Theory & Architecture</strong>.</li>
-    <li><strong>Assignments AL-1</strong></li>
-  </ul>
-* Advanced Level 2
-  <ul>
-    <li>Session 11: <strong>DNS, Domain & Net related utility functions</strong>.</li>
-    <li>Session 12: <strong>Cluster</strong>.</li>
-    <li>Session 13: <strong>C/C++ Addons</strong>.</li>
-    <li>Session 14: <strong>Crypto related utility functions</strong>.</li>
-    <li>Session 15: <strong>Node Theory, Security & Architecture</strong>.</li>
-    <li><strong>Assignments AL-2</strong></li>
-  </ul>
+* Sessions
+  01. [Introduction to Node.js Presentation](http://slides.com/ashwinhegde/introduction-to-node-js).
+  02. [Introduction to npm Presentation] (http://slides.com/ashwinhegde/introduction-to-npm).
+  03. Console, OS, Path, Query-String, String-Decoder and URL related utility functions.
+  04. Global, Modules, File System and Readline related utility functions.
+  05. Process and Child Process related utility functions.
+  06. HTTP, HTTPS & Events related utility functions.
+  07. DNS, Net and Domain related utility functions.
+  08. Cluster related utility functions.
+  09. Assert (+nodeunit) and Debugging (+node-inspector) related utility functions.
+  10. C/C++ Addons and Crypto related utility functions.
 
 ## How to use training kit examples
 
@@ -56,19 +36,16 @@ But when it comes to JavaScript based project I personally recommend the followi
 as per the priority.
 
 Online Environment:
-<ul>
-  <li>Cloud9 IDE</li>
-</ul>
+* [Cloud9 IDE] (https://c9.io/).
+* [Koding] (https://koding.com/).
 
 Offline Environment:
-<ul>
-  <li>Sublime Text 2 or above</li>
-  <li>WebStorm</li>
-  <li>Bracket</li>
-  <li>Notepad++</li>
-  <li>Microsoft Visual Studio</li>
-  <li>Adobe Dreamweaver</li>
-</ul>
+* Sublime Text 2 or above.
+* WebStorm.
+* Bracket.
+* Notepad++.
+* Microsoft Visual Studio.
+* Adobe Dreamweaver.
 
 ## Contributors
 
