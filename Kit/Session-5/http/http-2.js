@@ -1,5 +1,5 @@
 /***
- * The goal of this file is to know How to http function and events;
+ * The goal of this file is to show How to use http functions;
  *
  *
  * How to run this example:
