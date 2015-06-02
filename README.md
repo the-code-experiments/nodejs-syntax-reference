@@ -11,8 +11,8 @@ This training kit has been developed for those who already have the basic knowle
 ## Training kit includes
 
 * Sessions
-  01. [Introduction to Node.js Presentation](http://slides.com/ashwinhegde/introduction-to-node-js).
-  02. [Introduction to npm Presentation] (http://slides.com/ashwinhegde/introduction-to-npm).
+  01. [Introduction to Node.js Presentation](http://slides.com/ashwinhegde/nodejs/fullscreen).
+  02. [Introduction to npm Presentation] (http://slides.com/ashwinhegde/introduction-to-npm/fullscreen).
   03. Console, OS, Path, Query-String, String-Decoder and URL related utility functions.
   04. Global, Modules, File System and Readline related utility functions.
   05. Process and Child Process related utility functions.
