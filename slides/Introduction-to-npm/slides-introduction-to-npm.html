@@ -44,39 +44,22 @@
 	<li>What is npm ?</li>
 	<li>Examples of npm.</li>
 	<li>What is package.json ?</li>
-	<li>Frequently asked questions.</li>
+	<li>Global &amp; Local Installation/Un-installation.</li>
 	<li>Case studies - Underscore, Bower &amp; HTTP-Server.</li>
 </ul>
 </div></div></section><section class="stack"><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 33px; height: auto;" data-block-id="1c4efdd99066df01da4724f85e18fdb4"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
 <h2>What is npm?</h2>
 </div></div>
-<div class="sl-block" data-block-type="text" style="width: 459px; left: 80px; top: 139px; height: auto;" data-block-id="acbecad8b6c5a9923f28cce47acf6c16"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="text-align: left; z-index: 11;" dir="ui">
+<div class="sl-block" data-block-type="text" style="width: 459px; left: 80px; top: 144px; height: auto;" data-block-id="acbecad8b6c5a9923f28cce47acf6c16"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="text-align: left; z-index: 11;" dir="ui">
 <ul>
-	<li>
-<span style="font-size:16px">npm is a<span style="font-size:20px"> </span></span><span style="font-size:20px">Package Manager </span><span style="font-size:16px">for </span><span style="font-size:24px">JavaScript</span>.</li>
-	<li>
-<span style="font-size:24px">0.6.3</span> <span style="font-size:16px">=&gt; </span><span style="font-size:20px">bundled</span> <span style="font-size:16px">and </span><span style="font-size:20px">installed </span><span style="font-size:24px">automatically</span>.</li>
-	<li>
-<span style="font-size:16px">Written in </span><span style="font-size:24px">JavaScript </span><span style="font-size:16px">and developed by </span><span style="font-size:24px">Isaac Z. Schuleter</span>.</li>
-	<li><span style="font-size:16px"><span style="color:rgb(51, 51, 51)">npm<span style="font-size:20px"> doesn’t load </span>your modules. It<span style="font-size:24px"> installs them.</span></span></span></li>
+	<li><span style="font-size:24px">Package Manager for JavaScript.</span></li>
+	<li><span style="font-size:24px">0.6.3 =&gt; bundled and installed automatically.</span></li>
+	<li><span style="font-size:24px">JavaScript/Coffee-Script and developed by Isaac Z. Schuleter.</span></li>
+	<li><span style="font-size:24px">no load, just installs them.</span></li>
 </ul>
 </div></div>
 
-<div class="sl-block" data-block-type="image" data-block-id="68eca085791abb0a049b613a17052e54" style="min-width: 30px; min-height: 30px; width: 400px; height: 225px; left: 560px; top: 146px;"><div class="sl-block-content" style="z-index: 13;"><img style="visibility: visible;" data-natural-width="1280" data-natural-height="720" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/1207173/maxresdefault.jpg"></div></div></section><section>
-<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 31px; height: auto;" data-block-id="6993e27b688488b88f868c5a75c12748"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="text-align: left; z-index: 11;">
-<ul>
-	<li>Handle multiple versions of the same thing at the same time.</li>
-</ul>
-</div></div>
-<div class="sl-block" data-block-type="code" data-block-id="60833f456de92bd296b3e0fd1822c10a" style="min-width: 30px; min-height: 30px; width: 406px; height: 200px; left: 240px; top: 140px;"><div class="sl-block-content" style="z-index: 12;"><pre><code>abc@1.0.0
-|
-+-- pqr@1.0.0
-|   |
-|   `-- xyz@1.0.0 \
-|                  \
-`-- qpr@1.0.0       &gt; Conflict?
-    |              /
-    `-- xyz@2.0.0 /</code></pre></div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 70px; height: auto;" data-block-id="5bd3c3452d92e1191d7fed5331c8ec8b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<div class="sl-block" data-block-type="image" data-block-id="68eca085791abb0a049b613a17052e54" style="min-width: 30px; min-height: 30px; width: 391px; height: 219.9375px; left: 525px; top: 140px;"><div class="sl-block-content" style="z-index: 13;"><img style="visibility: visible;" data-natural-width="1280" data-natural-height="720" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/ashwinhegde/images/1207173/maxresdefault.jpg"></div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 70px; height: auto;" data-block-id="5bd3c3452d92e1191d7fed5331c8ec8b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
 <h2>Examples</h2>
 </div></div>
 <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 187px; height: auto;" data-block-id="f3be3f058eaf56f7e569e17fb58e162b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="text-align: left; z-index: 12;">
@@ -101,12 +84,22 @@
 <div class="sl-block" data-block-type="image" data-block-id="215c64992cc25e51c4511543c47efc7c" style="min-width: 30px; min-height: 30px; width: 276.497695852535px; height: 300px; left: 582px; top: 280px;"><div class="sl-block-content fragment" style="z-index: 15;" data-fragment-index="3"><img style="" data-natural-width="200" data-natural-height="217" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/162473/images/1464205/QLK18jf.gif"></div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 79px; top: 50px; height: auto;" data-block-id="08d12747580058eb6f29585aeb55dabb"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
 <h2>My reaction after publishing my first npm</h2>
 </div></div>
-<div class="sl-block" data-block-type="image" style="width: 400px; height: 300.408163265306px; left: 280px; top: 280px;" data-block-id="078dc5c16023a023e4a7fc445d4640f0"><div class="sl-block-content fragment" data-fragment-index="0"><img style="" data-natural-width="245" data-natural-height="184" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/162473/images/1464195/0erQFLu.gif"></div></div></section></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 33px; height: auto;" data-block-id="11c99470f2f26642f1d898c8610e1c50"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<div class="sl-block" data-block-type="image" style="width: 400px; height: 300.408163265306px; left: 280px; top: 280px;" data-block-id="078dc5c16023a023e4a7fc445d4640f0"><div class="sl-block-content fragment" data-fragment-index="0"><img style="" data-natural-width="245" data-natural-height="184" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/162473/images/1464195/0erQFLu.gif"></div></div></section></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 33px; height: auto;" data-block-id="dc49ff11a2cc33d4d44e1fa826c542ad"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>What is package.json?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 134px; height: auto;" data-block-id="67c42f7261726aa7ba7a71c250f2616f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="text-align: left; z-index: 12;">
+<ul>
+	<li>Create a new module.</li>
+	<li>Can be published to npm.</li>
+	<li>Holds meta information for module.</li>
+	<li>"name" and "version" are 2 require fields.</li>
+	<li>Also "main" =&gt; default index.js</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 800px; height: 30px; left: 80px; top: 350px;" data-block-id="94d9d1593243a79583fa3fd1f04a4a34"><div class="sl-block-content" style="z-index: 13;"><pre><code>npm init</code></pre></div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 33px; height: auto;" data-block-id="3c2d62023b91a8903ffcd3bce8ac1341"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
 <h2>Similar environment</h2>
 </div></div>
-
-
-<div class="sl-block" data-block-type="text" data-block-id="043034471a244791fae66b46c9b22b11" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 68px; top: 140px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 68px; top: 140px;" data-block-id="a794825de7151aaabff17864eb6fb173"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
 <p style="text-align:left">1. Bower - JavaScript front end .</p>
 
 <p style="text-align:left"><span><span>2. PEAR, Composer - PHP</span></span></p>
@@ -122,55 +115,17 @@
 <p style="text-align:left"><span>7. Go Get - Go</span></p>
 
 <p style="text-align:left"><span>8. Anaconda - Python</span></p>
-</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 33px; height: auto;" data-block-id="dc49ff11a2cc33d4d44e1fa826c542ad"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
-<h2>What is package.json?</h2>
-</div></div>
-<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 134px; height: auto;" data-block-id="67c42f7261726aa7ba7a71c250f2616f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="text-align: left; z-index: 12;">
-<ul>
-	<li>Create a new module.</li>
-	<li>Can be published to npm.</li>
-	<li>Holds meta information for module.</li>
-	<li>"name" and "version" are 2 require fields.</li>
-	<li>Also "main" =&gt; default index.js</li>
-</ul>
-</div></div>
-<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 800px; height: 30px; left: 80px; top: 350px;" data-block-id="94d9d1593243a79583fa3fd1f04a4a34"><div class="sl-block-content" style="z-index: 13;"><pre><code>npm init</code></pre></div></div></section><section class="stack"><section><div class="sl-block" data-block-type="text" style="width: 826px; left: 67px; top: 70px; height: auto;" data-block-id="cab6e8c41b1c97c9cb376aeedfe4b556"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
-<h2>Frequently Asked Questions</h2>
-</div></div>
-<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 177px; height: auto;" data-block-id="bf004a71a5397d6eaf6977601019b4a2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="text-align: left; z-index: 11;">
-<ul>
-	<li><span style="font-size:16px">I installed something <span style="font-size:24px">globally</span>, but i <span style="font-size:24px">can't require()</span> it.</span></li>
-	<li><span style="font-size:16px">Should I check my <span style="font-size:20px">node_modules</span> folder <span style="font-size:24px">into git</span>.</span></li>
-	<li>
-<span style="font-size:16px">Is it '<span style="font-size:20px">NPM</span>' or '<span style="font-size:20px">Npm</span>' or </span><span>'</span><span>npm</span><span>'.</span>
-</li>
-	<li><span style="font-size:16px"><span style="font-size:20px">Module </span>=&gt; <span style="font-size:24px">package.json + index.js [+ *.js]</span>.</span></li>
-	<li><span style="font-size:16px">Can I <span style="font-size:20px">configure </span>npm dependencies to use a <span style="font-size:24px">different folder?</span></span></li>
-	<li> </li>
-</ul>
-</div></div>
-<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 177px; height: auto;" data-block-id="73463541f82a1b373d88e2f35618bcdd"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="text-align: left; z-index: 13;">
-<ul>
-	<li><span style="font-size:16px">I installed something <span style="font-size:24px">globally</span>, but i <span style="font-size:24px">can't require()</span> it.</span></li>
-	<li><span style="font-size:16px">Should I check my <span style="font-size:20px">node_modules</span> folder <span style="font-size:24px">into git</span>.</span></li>
-	<li>
-<span style="font-size:16px">Is it '<span style="font-size:20px">NPM</span>' or '<span style="font-size:20px">Npm</span>' or </span><span>'</span><span>npm</span><span>'.</span>
-</li>
-	<li><span style="font-size:16px"><span style="font-size:20px">Module </span>=&gt; <span style="font-size:24px">package.json + index.js [+ *.js]</span>.</span></li>
-	<li><span style="font-size:16px">Can I <span style="font-size:20px">configure </span>npm dependencies to use a <span style="font-size:24px">different folder?</span></span></li>
-	<li><span style="font-size:16px"><span style="font-size:20px">Bundle</span> all your <span style="font-size:20px">dependencies </span>into the <span style="font-size:24px">package itself.</span></span></li>
-</ul>
 </div></div></section><section><div class="sl-block" data-block-type="text" style="width: 826px; left: 67px; top: 70px; height: auto;" data-block-id="37fa05bec0d6953761535a9f0cbbe043"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
 <h2>Case studies</h2>
 </div></div>
 
-<div class="sl-block" data-block-type="text" style="width: 320px; left: 80px; top: 177px; height: auto;" data-block-id="7082c5c52bc9522da02e1bdbda8d25a7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="text-align: left; z-index: 13;">
+<div class="sl-block" data-block-type="text" style="width: 720px; left: 80px; top: 177px; height: auto;" data-block-id="7082c5c52bc9522da02e1bdbda8d25a7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="text-align: left; z-index: 13;">
 <ul>
 	<li>Underscore.</li>
 	<li>Bower.</li>
 	<li>Http-server.</li>
 </ul>
-</div></div></section></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 140px; height: auto;" data-block-id="f309fedc1df71271eff1f332b419510b"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 140px; height: auto;" data-block-id="f309fedc1df71271eff1f332b419510b"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
 <h1><span style="font-size:48px">Thank You</span></h1>
 </div></div>
 <div class="sl-block" data-block-type="text" data-block-id="6a5527c03d2cca0cb3dc1cb0c690bb43" style="height: auto; min-width: 30px; min-height: 30px; width: 640px; left: 160px; top: 280px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
