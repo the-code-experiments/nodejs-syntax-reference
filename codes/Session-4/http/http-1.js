@@ -4,7 +4,7 @@
  *
  * How to run this example:
  * 1. node http-1.js
- * 2. See the message get displayed on prompt.
+ * 2. http://localhost:5005/
  */
 
 var http = require('http');

@@ -4,7 +4,7 @@
  *
  * How to run this example:
  * 1. node http-2.js
- * 2. See the message get displayed on prompt.
+ * 2. http://localhost:5005/
  */
 
 // Your gateway page. It's a file that Node will serve if a directory is requested.
