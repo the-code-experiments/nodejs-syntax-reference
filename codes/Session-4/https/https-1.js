@@ -9,12 +9,12 @@
 
 /** Notes:
  * To create an HTTPS server, you need two things: an SSL certificate, and Node's built-in https module.
- * We need to start out with a word about SSL certificates. 
- * Speaking generally, there are two kinds of certificates: those signed by a 'Certificate Authority', or CA, and 'self-signed certificates'. 
- * A Certificate Authority is a trusted source for an SSL certificate, 
+ * We need to start out with a word about SSL certificates.
+ * Speaking generally, there are two kinds of certificates: those signed by a 'Certificate Authority', or CA, and 'self-signed certificates'.
+ * A Certificate Authority is a trusted source for an SSL certificate,
  * and using a certificate from a CA allows your users to be trust the identity of your website.
- * 
- * In most cases, you would want to use a CA-signed certificate in a production environment - for testing purposes, 
+ *
+ * In most cases, you would want to use a CA-signed certificate in a production environment - for testing purposes,
  * however, a self-signed certicate will do just fine.
  *
  *
@@ -25,8 +25,8 @@
  * openssl req -new -key key.pem -out csr.pem
  * openssl x509 -req -days 9999 -in csr.pem -signkey key.pem -out cert.pem
  * rm csr.pem
- * 
- * This should leave you with two files, cert.pem (the certificate) and key.pem (the private key). 
+ *
+ * This should leave you with two files, cert.pem (the certificate) and key.pem (the private key).
  * This is all you need for a SSL connection.
  *
  */
