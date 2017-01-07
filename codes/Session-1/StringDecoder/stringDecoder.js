@@ -7,11 +7,11 @@
  * 2. See the message get displayed on prompt.
  */
 
-var cent = new Buffer([0x40]);
+const cent = new Buffer([0x40]);
 console.log(cent.toString());
 
-var StringDecoder = require('string_decoder').StringDecoder;
-var decoder = new StringDecoder('utf8');
+const StringDecoder = require('string_decoder').StringDecoder;
+const decoder = new StringDecoder('utf8');
 
 /***
  * decoder.write returns a decoded string.
@@ -19,6 +19,6 @@ var decoder = new StringDecoder('utf8');
 cent = new Buffer([0xC2, 0xA2]);
 console.log(decoder.write(cent));
 
-var euro = new Buffer([0xE2, 0x82, 0xAC]);
+const euro = new Buffer([0xE2, 0x82, 0xAC]);
 console.log(decoder.write(euro));
 

@@ -8,6 +8,6 @@
  * 2. See the message get displayed on prompt.
  */
 
-process.argv.forEach(function(val, index, array) {
+process.argv.forEach((val, index, array) => {
 	console.log(index + ": " + val);
 });

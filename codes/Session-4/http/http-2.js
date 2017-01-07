@@ -8,23 +8,23 @@
  */
 
 // Your gateway page. It's a file that Node will serve if a directory is requested.
-var gatewayPage = "src/index.html";
-var listenPort = 5005;
+const gatewayPage = "src/index.html";
+const listenPort = 5005;
 
-var http = require('http'),
-	fs = require('fs'),
-	path = require('path');
+const http = require('http');
+const fs = require('fs');
+const path = require('path');
 
-var requestConnector = function(req, res) {
+const requestConnector = (req, res) => {
 
 	if (req.url === '/') {
 		req.url = gatewayPage;
 	}
-	var file = path.join(__dirname, req.url);
+	const file = path.join(__dirname, req.url);
 
-	fs.exists(file, function(exists) {
+	fs.exists(file, (exists) => {
 		if (exists) {
-			fs.stat(file, function(error, stats) {
+			fs.stat(file, (error, stats) => {
 				if (error) {
 					throw error;
 				}
@@ -46,6 +46,6 @@ var requestConnector = function(req, res) {
 	});
 }
 
-http.createServer(requestConnector).listen(listenPort, function() {
+http.createServer(requestConnector).listen(listenPort, () => {
 	console.log("\n\n\tServer is connected on localhost:" + listenPort);
 });

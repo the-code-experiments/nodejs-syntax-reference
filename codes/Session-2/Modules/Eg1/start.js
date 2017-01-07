@@ -7,13 +7,12 @@
  * 2. See the message get displayed on prompt.
  */
 
-var circle = require('./circle.js');
+const circle = require('./circle.js');
 console.log("The area of a circle of radius 4 is: " + circle.area(4));
 
-
-var square = require('./square.js');
-var mySquare1 = square(2);
-var mySquare2 = square(4);
+const square = require('./square.js');
+const mySquare1 = square(2);
+const mySquare2 = square(4);
 console.log('The area of my square 1 is: ' + mySquare1.area());
 console.log('The area of my square 2 is: ' + mySquare2.area());
 

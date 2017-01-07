@@ -12,9 +12,9 @@
  * On Windows, it is not yet possible to set up a named pipe server in a worker.
  */
 
-var cluster = require('cluster');
-var http = require('http');
-var totalCPUs = require('os').cpus().length;
+const cluster = require('cluster');
+const http = require('http');
+const totalCPUs = require('os').cpus().length;
 
 console.log("Number of CPUs available: ", totalCPUs);
 
@@ -22,19 +22,19 @@ if (cluster.isMaster) {
 	/**
 	 * fork workers.
 	 */
-	var i = 0;
+	let i = 0;
 	for (; i < totalCPUs; i++) {
 		cluster.fork();
 	}
 
-	cluster.on('exit', function(worker, code, signal) {
+	cluster.on('exit', (worker, code, signal) => {
 		console.log('Worker: ' + worker.process.id + ' died');
 	});
 } else {
 	/**
 	 * worker can share http server.
 	 */
-	var server = http.createServer(function(req, res) {
+	const server = http.createServer((req, res) => {
 		res.writeHead(200, {
 			'Content-Type': 'text/plain'
 		});

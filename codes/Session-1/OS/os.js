@@ -12,7 +12,7 @@
 /***
  * Note: Use require('os') to get access to os based utility functions.
 */
-var os = require('os');
+const os = require('os');
 
 /***
  * Returns the hostname of the operating system.

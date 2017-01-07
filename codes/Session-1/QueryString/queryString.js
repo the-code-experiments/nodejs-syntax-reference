@@ -7,11 +7,11 @@
  * 2. See the message get displayed on prompt.
  */
 
-var queryString = require('querystring');
+const queryString = require('querystring');
 /***
  * 'foo=bar&baz=qux&baz=quux&corge='
  */
-var qString = queryString.stringify({
+let qString = queryString.stringify({
 	email: 'ashwinh@cybage.com',
 	itemsCode: ['p001', 'p002'],
 	payment: true

@@ -12,7 +12,7 @@
 /***
  * Note: Use require('path') to get access to path based utility functions.
 */
-var path = require('path');
+const path = require('path');
 
 /***
  * Path Normalize:

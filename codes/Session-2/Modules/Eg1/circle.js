@@ -13,12 +13,12 @@
  * 
  * Exports the function area() & circumference().
  */
-var PI = Math.PI;
+const PI = Math.PI;
 
-exports.area = function(radius) {
+exports.area = (radius) => {
 	return PI * radius * radius;
 }
 
-exports.circumference = function(radius) {
+exports.circumference = (radius) => {
 	return 2 * PI * radius;
 }

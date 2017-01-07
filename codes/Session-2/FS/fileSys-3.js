@@ -7,9 +7,9 @@
  * 2. See the message get displayed on prompt.
  */
 
-var fs = require('fs'),
-	path = require('path'),
-	filename1 = path.normalize('FixContent/email2.txt');
+const fs = require('fs');
+const path = require('path');
+const filename1 = path.normalize('FixContent/email2.txt');
 
 /***
  * Keep a watch on file with watch.
