@@ -14,13 +14,13 @@
 */
 console.log("Hi, My name is Ashwin Hegde");
 
-var designation = "Sr. Software Engineer";
+const designation = "Sr. Software Engineer";
 console.log("I am " + designation + " at Cybage Software Private Limited, Pune, HQ");
 
-var experience = 2.6;
+const experience = 2.6;
 console.log("I have total %d of Experience, excluding 10 months as freelancer", experience); // %d is for both Integer & Float.
 
-var languages = {
+const languages = {
 	"lang1": "JavaScript",
 	"lang2": "Go",
 	"lang3": "PHP",
@@ -49,7 +49,7 @@ console.warn("Warn: Warning Message");
  * console.timeEnd() will finish timer, record output.
 */
 console.time('calculation');
-for (var i = 0; i < 1000000000; i++) {
+for (let i = 0; i < 1000000000; i++) {
   ;
 }
 console.timeEnd('calculation');

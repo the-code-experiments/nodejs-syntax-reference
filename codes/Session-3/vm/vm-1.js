@@ -7,14 +7,14 @@
  * 2. See the message get displayed on prompt.
  */
 
-var vm = require('vm');
+const vm = require('vm');
 
-var localVar = 'initial value';
+const localVar = 'initial value';
 
-var vmResult = vm.runInThisContext('localVar =  "vm";');
+const vmResult = vm.runInThisContext('localVar =  "vm";');
 console.log('vmResult: ', vmResult);
 console.log('localVar: ', localVar);
 
-var evalResult = eval('localVar = "evanResult";');
+const evalResult = eval('localVar = "evanResult";');
 console.log('evalResult: ', evalResult);
 console.log('localVar: ', localVar);

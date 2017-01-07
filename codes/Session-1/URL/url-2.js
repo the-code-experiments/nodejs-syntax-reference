@@ -7,9 +7,9 @@
  * 2. See the message get displayed on prompt.
  */
 
-var url = require('url');
+const url = require('url');
 
-var website = {
+const website = {
 	protocol: 'http:',
 	slashes: true,
 	auth: 'user:pass',

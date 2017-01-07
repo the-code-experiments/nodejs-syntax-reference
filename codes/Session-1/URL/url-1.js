@@ -7,7 +7,7 @@
  * 2. See the message get displayed on prompt.
  */
 
-var url = require('url');
+const url = require('url');
 
 /**
  * http://user:pass@host.com:8080/p/a/t/h?query=string#hash
@@ -25,7 +25,7 @@ var url = require('url');
  * Hash: #hash
  */
 
-var website = "http://user:pass@host.com:8080/p/a/t/h?query=string#hash";
+let website = "http://user:pass@host.com:8080/p/a/t/h?query=string#hash";
 
 /**
  * url.parse(urlStr[, parseQueryString][, slashesDenoteHost])

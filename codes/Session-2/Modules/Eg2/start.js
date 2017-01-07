@@ -7,6 +7,6 @@
  * 2. See the message get displayed on prompt.
  */
 
-var square = require('./npm');
-var mySquare1 = square(2);
+const square = require('./npm');
+const mySquare1 = square(2);
 console.log('The area of my square 1 is: ' + mySquare1.area());

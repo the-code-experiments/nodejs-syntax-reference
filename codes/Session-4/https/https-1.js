@@ -31,15 +31,15 @@
  *
  */
 
-var http = require('https');
-var fs = require('fs');
+ const http = require('https');
+ const fs = require('fs');
 
-var options = {
+ const options = {
 	key: fs.readFileSync('key.pem'),
 	cert: fs.readFileSync('cert.pem')
 };
 
-var server = http.createServer(options, function(req, res) {
+ const server = http.createServer(options, (req, res) => {
 	res.writeHead(200, {
 		'Content-Type': 'text/plain'
 	});

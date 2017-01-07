@@ -7,10 +7,10 @@
  * 2. See the message get displayed on prompt.
  */
 
-var fs = require('fs'),
-	path = require('path'),
-	filename1 = path.normalize('FixContent/email1.txt'),
-	filename2 = path.normalize('FixContent/email15.txt');
+const fs = require('fs');
+const path = require('path');
+const filename1 = path.normalize('FixContent/email1.txt');
+const filename2 = path.normalize('FixContent/email15.txt');
 
 /***
  * Check a file already exists.

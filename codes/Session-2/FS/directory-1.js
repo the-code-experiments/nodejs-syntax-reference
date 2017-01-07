@@ -7,8 +7,8 @@
  * 2. See the message get displayed on prompt.
  */
 
-var fs = require('fs'),
-	dirName = 'Folder1';
+const fs = require('fs');
+const dirName = 'Folder1';
 
 /***
  * Create a directory.

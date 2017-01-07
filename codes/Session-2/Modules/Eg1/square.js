@@ -12,9 +12,9 @@
  * This will behave as a constructor.
  * Also this will export a complete object in 1 assignment instead of building it 1 property at a time.
  */
-module.exports = function(width) {
+module.exports = (width) => {
 	return {
-		area: function() {
+		area: () => {
 			// console.log(module.filename);
 			// console.log(module.loaded);
 			// console.log(module.parent);

@@ -7,13 +7,13 @@
  * 2. See the message get displayed on prompt.
  */
 
-var fs = require('fs'),
-	dirName = 'FixContent';
+const fs = require('fs');
+const dirName = 'FixContent';
 
 /***
  * Read a directory.
  */
-fs.readdir(dirName, function(error, files) {
+fs.readdir(dirName, (error, files) => {
 	if (error) throw error;
 	console.log('Following are the directory contents: ');
 	console.log(files);

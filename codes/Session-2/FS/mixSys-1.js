@@ -7,15 +7,15 @@
  * 2. See the message get displayed on prompt.
  */
 
-var fs = require('fs'),
-	path = require('path'),
-	filename1 = path.normalize('FixContent/email1.txt'),
-	dirname1 = path.normalize('FixContent/FixInnerContent');
+const fs = require('fs');
+const path = require('path');
+const filename1 = path.normalize('FixContent/email1.txt');
+const dirname1 = path.normalize('FixContent/FixInnerContent');
 
 /***
  * Stats of the file.
  */
-fs.stat(filename1, function(error, stats) {
+fs.stat(filename1, (error, stats) => {
 	if (error) throw error;
 	console.log('%s stats: %j', filename1, stats);
 });
@@ -23,7 +23,7 @@ fs.stat(filename1, function(error, stats) {
 /***
  * Stats of the directory.
  */
-fs.stat(dirname1, function(error, stats) {
+fs.stat(dirname1, (error, stats) => {
 	if (error) throw error;
 	console.log('%s stats: %j', dirname1, stats);
 });
@@ -31,7 +31,7 @@ fs.stat(dirname1, function(error, stats) {
 /***
  * Check path is file or not.
  */
-fs.stat(filename1, function(error, stats) {
+fs.stat(filename1, (error, stats) => {
 	if (error) throw error;
 	if (stats.isFile()) {
 		console.log('%s is a file.', filename1);
@@ -43,7 +43,7 @@ fs.stat(filename1, function(error, stats) {
 /***
  * Check path is directory or not.
  */
-fs.stat(dirname1, function(error, stats) {
+fs.stat(dirname1, (error, stats) => {
 	if (error) throw error;
 	if (stats.isDirectory()) {
 		console.log('%s is a directory.', dirname1);

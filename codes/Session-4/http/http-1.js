@@ -7,9 +7,9 @@
  * 2. http://localhost:5005/
  */
 
-var http = require('http');
+const http = require('http');
 
-var server = http.createServer(function(req, res) {
+const server = http.createServer((req, res) => {
 	res.writeHead(200, {
 		'Content-Type': 'text/plain'
 	});
