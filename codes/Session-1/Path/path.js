@@ -62,6 +62,13 @@ console.log(path.basename('D:/Projects/Nodejs/index.html'));
 
 console.log(path.basename('D:/Projects/Nodejs/index.html', '.html'));
 
+/**
+ * On Windows and Posix
+ */
+console.log(path.win32.basename('D:/Projects/Nodejs/index.html'));
+
+console.log(path.posix.basename('D:/Projects/Nodejs/index.html'))
+
 /***
  * Return the relative path from `from` to `to`
 */
