@@ -17,6 +17,10 @@
  * The child_process.spawnSync is same in a synchronous manner which blocks event loop untile the process exits
  */
 const spawn = require('child_process').spawn;
+
+/**
+ * On Window, spawn('cmd.exe', ['/c', 'my.bat']);
+ */
 const ls = spawn('ls', ['/usr', '/bin']);
 
 ls.stdout.on('data', (data) => {
