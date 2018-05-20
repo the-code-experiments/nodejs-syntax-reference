@@ -1,5 +1,5 @@
 /**
- * Don't run this directly, instead run node parent-process-5.js
+ * Don't run this directly, instead run node parent-process-4.js
  */
 
 if (process.send) {
