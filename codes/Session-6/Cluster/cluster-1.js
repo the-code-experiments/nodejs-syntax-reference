@@ -14,6 +14,8 @@
 
 const cluster = require('cluster');
 const http = require('http');
+
+// balancing a large workload over these processes
 const totalCPUs = require('os').cpus().length; // 4 QuardCore Processor
 
 if (cluster.isMaster) {
