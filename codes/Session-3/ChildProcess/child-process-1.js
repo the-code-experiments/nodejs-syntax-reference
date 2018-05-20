@@ -16,7 +16,7 @@
  * The child_process.spawn method spawns the child process asynchronously, withour blocking the Node.js event loop.
  * The child_process.spawnSync is same in a synchronous manner which blocks event loop untile the process exits
  */
-const spawn = require('child_process').spawn;
+const { spawn } = require('child_process');
 
 /**
  * On Window, spawn('cmd.exe', ['/c', 'my.bat']);
@@ -24,11 +24,11 @@ const spawn = require('child_process').spawn;
 const ls = spawn('ls', ['/usr', '/bin']);
 
 ls.stdout.on('data', (data) => {
-    console.log(`stdout: ${data}`);
+    console.log(`stdout: \n${data}`);
 });
 
 ls.stderr.on('data', (data) => {
-    console.log(`stderr: ${data}`);
+    console.log(`stderr: \n${data}`);
 });
 
 ls.on('close', (code) => {

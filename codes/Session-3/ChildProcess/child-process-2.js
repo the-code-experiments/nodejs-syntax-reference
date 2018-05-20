@@ -12,7 +12,7 @@
  * 
  * execSync: a synchronous version and will block the event loop.
  */
-const exec = require('child_process').exec;
+const { exec } = require('child_process');
 
 /**
  * If a callback function is provided, it is called with the arguments (error, stdout, stderr)
@@ -24,12 +24,21 @@ const exec = require('child_process').exec;
  * 
  * By default, Node.js will decode the output as UTF-8 and pass strings to the callback
  */
-exec('cat ./FixContent/Hello.txt | wc -l', (error, stdout, stderr) => {
+const cat = exec('cat ./FixContent/Hello.txt | wc -l', (error, stdout, stderr) => {
     if (error) {
         console.error(`exec error: ${error}`);
         return;
     }
 
-    console.log(`stdout: ${stdout}`);
-    console.log(`stderr: ${stderr}`);
+    // Either use this or event handler
+    // console.log(`stdout: ${stdout}`);
+    // console.log(`stderr: ${stderr}`); 
+});
+
+cat.stdout.on('data', (data) => {
+    console.log(`stdout: \n${data}`);
+});
+
+cat.stderr.on('data', (data) => {
+    console.log(`stderr: \n${data}`);
 });
