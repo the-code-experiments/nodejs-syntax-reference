@@ -1,12 +1,10 @@
-# Learning Server Side JavaScript with Node.js
+# Learn Node.js API Syntax
 
 This training kit will teach you the basics of Node.js API Syntax
 
-## Prerequisites arranged as per the priority 
+## Prerequisites 
 
-* JavaScript
-* Basic understanding of Server side scripting
-* Basic understanding of web scripting
+* JavaScript and server side scripting
 
 ## Training kit includes
 
@@ -50,8 +48,7 @@ Follow me at: <a href="//github.com/hegdeashwin" target="_blank">github</a> | <a
 Visit the following link to know about Node.js current training updates<br>
 Home: <a href="//github.com/hegdeashwin/Server-Side-Node.js" target="_blank">github.com/hegdeashwin/Server-Side-Node.js</a>
   
-If you find any typo errors, enhancements or questions; please feel free to log it on following link<br>
-Feedback: <a href="//github.com/hegdeashwin/Server-Side-Node.js/issues" target="_blank">github.com/hegdeashwin/Server-Side-Node.js/issues</a>
+If you find any typo errors, enhancements or questions; please feel free to send the PR or log it on [issues](//github.com/hegdeashwin/Server-Side-Node.js/issues)
 
 ## License
 
