@@ -1,6 +1,6 @@
 # Learning Server Side JavaScript with Node.js
 
-The training kit for basics of Node.js API and npm.
+This training kit will teach you the basics of Node.js API Syntax
 
 ## Prerequisites arranged as per the priority 
 
@@ -24,10 +24,9 @@ The training kit for basics of Node.js API and npm.
 
 ## How to use training kit examples
 
-Clone the repository and start running the examples with Node.js and browse the codes with ready commits or 
-you can also experiment with the code online through Cloud environment which is powered by Cloud9 IDE.
+Clone the repository and start running the examples with Node.js (Try with Latest) and browse the codes with ready commits.
 
-<a href="//github.com/hegdeashwin/Server-Side-Node.js/archive/master.zip" target="_blank">Download this repository</a> or <a href="http://runnable.com/VXL59FLRDMBYQEAW/server-side-nodejs" target="_blank">Experiment online</a>
+<a href="//github.com/hegdeashwin/Server-Side-Node.js/archive/master.zip" target="_blank">Download this repository</a>
 
 ## Recommended text editor/IDE
 
@@ -36,16 +35,12 @@ But when it comes to JavaScript based project I personally recommend the followi
 as per the priority.
 
 Online Environment:
-* [Cloud9 IDE] (https://c9.io/).
 * [Koding] (https://koding.com/).
 
 Offline Environment:
+* Visual Studio Code.
 * Sublime Text 2 or above.
 * WebStorm.
-* Bracket.
-* Notepad++.
-* Microsoft Visual Studio.
-* Adobe Dreamweaver.
 
 ## Contributors
 
@@ -62,4 +57,4 @@ Feedback: <a href="//github.com/hegdeashwin/Server-Side-Node.js/issues" target="
 
 The MIT License (MIT)
 
-Copyright (c) 2015 Ashwin Hegde
+Copyright (c) 2018 Ashwin Hegde
