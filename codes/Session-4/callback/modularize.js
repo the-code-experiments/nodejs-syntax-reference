@@ -11,16 +11,25 @@ const fs = require('fs');
 
 const contentFile = __dirname + '/src/content.txt';
 
-const notifyUser = (error) => {  
-  if(error) return console.log(error);
-  console.log('Appended text!');
-};
-
 const appendText = (error, content) => {  
-  if (error) return console.log(error);
+  if (error) {
+    return console.log(error);
+  }
 
   content = content + '\nAppended something!';
-  fs.writeFile(contentFile, content, notifyUser);
+
+  fs.writeFile(contentFile, content, (error) => {
+    if (error) {
+      return error;
+    }
+
+    console.log(`Here is the file content: \n${content}`);
+  });
 }
 
-fs.readFile(contentFile, 'utf8', appendText);  
+const readFileContent = () => {
+  fs.readFile(contentFile, 'utf8', appendText);
+}
+
+
+readFileContent()
