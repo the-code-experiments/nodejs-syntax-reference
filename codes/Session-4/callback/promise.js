@@ -7,19 +7,41 @@
  * 1. node promise.js
  */
 
-const promise = new Promise(function(resolve, reject) {
-  if (false) {
-    return reject(new Error('something went wrong'));
-  }
+const fs = require('fs');
 
-  setTimeout(() => {
-    resolve('resolved');
-  }, 2000);
-})
+const contentFile = __dirname + '/src/content.txt';
 
-promise.then((data) => {
-    console.log(data);
-  })
-  .catch((error) => {
-    console.log(error);
+const appendText = (error, content) => {
+  return new Promise((resolve, reject) => {
+
+    if (error) {
+      return reject(error);
+    }
+
+    content = content + '\nAppended something!';
+
+    fs.writeFile(contentFile, content, (error) => {
+      if (error) {
+        return reject(error);
+      }
+      resolve(content);
+    });
+
   });
+}
+
+const readFileContent = () => {
+  return new Promise((resolve, reject) => {
+    fs.readFile(contentFile, 'utf8', (error, content) => {
+      if (error) {
+        return reject(error);
+      }
+      
+      resolve(content);
+    })
+  })
+}
+
+readFileContent()
+  .then(content => console.log(`Here is the file content: \n${content}`))
+  .catch(error => console.log(`Something went wrong: \n${error}`))

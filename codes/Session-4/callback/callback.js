@@ -25,6 +25,7 @@ const fs = require('fs');
 
 const contentFile = __dirname + '/src/content.txt';
 
+// Read file async
 fs.readFile(contentFile, 'utf8', (error, content) => {  
   if (error) {
     return console.log(error);
@@ -32,11 +33,12 @@ fs.readFile(contentFile, 'utf8', (error, content) => {
 
   content = content + '\nAppended something!';
 
+  // Write file async
   fs.writeFile(contentFile, content, (error) => {
     if(error) {
       return console.log(error);
     }
 
-    console.log('Appended text!');
+    console.log(`Here is the file content: \n${content}`);
   });
 });
